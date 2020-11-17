@@ -1,0 +1,2591 @@
+
+CoffeInC.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         0000000a  00800100  00001192  00001226  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00001192  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000010  0080010a  0080010a  00001230  2**0
+                  ALLOC
+  3 .comment      00000030  00000000  00000000  00001230  2**0
+                  CONTENTS, READONLY
+  4 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00001260  2**2
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000130  00000000  00000000  000012a0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   000030c0  00000000  00000000  000013d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000a1a  00000000  00000000  00004490  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000010b9  00000000  00000000  00004eaa  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000444  00000000  00000000  00005f64  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    0000083a  00000000  00000000  000063a8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00001b88  00000000  00000000  00006be2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 00000128  00000000  00000000  0000876a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+       0:	0c 94 17 01 	jmp	0x22e	; 0x22e <__ctors_end>
+       4:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+       8:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+       c:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      10:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      14:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      18:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      1c:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      20:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      24:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      28:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      2c:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      30:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      34:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      38:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      3c:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      40:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      44:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      48:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      4c:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      50:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      54:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      58:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      5c:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      60:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      64:	0c 94 34 01 	jmp	0x268	; 0x268 <__bad_interrupt>
+      68:	3d 08       	sbc	r3, r13
+      6a:	46 08       	sbc	r4, r6
+      6c:	4f 08       	sbc	r4, r15
+      6e:	56 08       	sbc	r5, r6
+      70:	5f 08       	sbc	r5, r15
+      72:	66 08       	sbc	r6, r6
+      74:	6d 08       	sbc	r6, r13
+      76:	74 08       	sbc	r7, r4
+      78:	7b 08       	sbc	r7, r11
+      7a:	82 08       	sbc	r8, r2
+      7c:	8b 08       	sbc	r8, r11
+      7e:	92 08       	sbc	r9, r2
+
+00000080 <__trampolines_end>:
+      80:	00 0a       	sbc	r0, r16
+      82:	1f 1f       	adc	r17, r31
+      84:	1f 0e       	add	r1, r31
+      86:	04 6e       	Address 0x00000086 is out of bounds.
+.word	0xffff	; ????
+
+00000087 <msgFInalizado1>:
+      87:	6e 6f 73 20 65 73 63 6f 6c 68 65 72 20 00           nos escolher .
+
+00000095 <msgFInalizado>:
+      95:	4f 62 72 69 67 61 64 6f 28 61 29 20 70 6f 72 00     Obrigado(a) por.
+
+000000a5 <msgAllReady2>:
+      a5:	65 73 74 61 28 6f 29 20 70 72 6f 6e 74 6f 28 73     esta(o) pronto(s
+      b5:	29 00                                               ).
+
+000000b7 <msgAllReady>:
+      b7:	53 65 75 28 73 29 20 63 61 66 65 28 73 29 00        Seu(s) cafe(s).
+
+000000c6 <msgActivityText>:
+      c6:	6e 6f 20 63 6f 70 6f 20 00                          no copo .
+
+000000cf <msgActivityChocolate>:
+      cf:	63 68 6f 63 6f 6c 61 74 65 00                       chocolate.
+
+000000d9 <msgActivityAcucar>:
+      d9:	61 63 75 63 61 72 00                                acucar.
+
+000000e0 <msgActivityLeie>:
+      e0:	6c 65 69 74 65 00                                   leite.
+
+000000e6 <msgActivityCafe>:
+      e6:	63 61 66 65 00                                      cafe.
+
+000000eb <msgActivity>:
+      eb:	43 6f 6c 6f 63 61 6e 64 6f 20 00                    Colocando .
+
+000000f6 <msgResp>:
+      f6:	20 53 69 6d 20 20 20 20 4e 61 6f 00                  Sim    Nao.
+
+00000102 <msgConfigChocolate>:
+     102:	44 65 73 65 6a 61 20 63 68 6f 63 6f 2e 20 43 00     Deseja choco. C.
+
+00000112 <msgConfigAcucar>:
+     112:	44 65 73 65 6a 61 20 61 63 75 63 61 72 20 43 00     Deseja acucar C.
+
+00000122 <msgConfigLeite>:
+     122:	44 65 73 65 6a 61 20 6c 65 69 74 65 20 43 00        Deseja leite C.
+
+00000131 <msgDebbugCoffe2>:
+     131:	44 69 73 70 6f 6e 69 76 65 6c 3a 20 00              Disponivel: .
+
+0000013e <msgDebbugCoffe>:
+     13e:	43 6f 6e 73 75 6d 6f 3a 20 00                       Consumo: .
+
+00000148 <msgConfigSucefful2>:
+     148:	6e 6f 20 63 6f 70 6f 00                             no copo.
+
+00000150 <msgConfigSucefful>:
+     150:	43 61 66 65 20 63 6f 6c 6f 63 61 64 6f 00           Cafe colocado.
+
+0000015e <msgConfigQuantCoffe2>:
+     15e:	6e 61 20 6d 61 71 75 69 6e 61 3a 00                 na maquina:.
+
+0000016a <msgConfigQuantCoffe>:
+     16a:	43 6f 6c 6f 71 75 65 20 63 61 66 65 00              Coloque cafe.
+
+00000177 <msgConfigTypeCop>:
+     177:	20 50 65 71 20 20 4d 65 64 20 20 47 72 61 20 00      Peq  Med  Gra .
+
+00000187 <msgConfigTypeCop2>:
+     187:	53 65 6c 65 63 69 6f 6e 65 3a 00                    Selecione:.
+
+00000192 <msgConfigTypeCopo1>:
+     192:	6f 20 74 69 70 6f 20 64 6f 20 63 6f 70 6f 00        o tipo do copo.
+
+000001a1 <msgConfigTypeCopo>:
+     1a1:	53 72 2e 20 73 65 6c 65 63 69 6f 6e 65 00           Sr. selecione.
+
+000001af <msgConfigQuantCopo1>:
+     1af:	71 75 61 6e 74 6f 73 20 63 6f 70 6f 73 3a 00        quantos copos:.
+
+000001be <msgConfigQuantCopo>:
+     1be:	53 72 20 67 6f 73 74 61 72 69 61 20 64 65 00        Sr gostaria de.
+
+000001cd <msgPresenceCopText>:
+     1cd:	64 6f 20 63 6f 70 6f 20 00                          do copo .
+
+000001d6 <msgPresenceRet>:
+     1d6:	72 65 74 69 72 61 64 61 00                          retirada.
+
+000001df <msgPresenceEnt>:
+     1df:	65 6e 74 72 61 64 61 00                             entrada.
+
+000001e7 <msgPresenceStatusRet>:
+     1e7:	20 72 65 74 69 72 61 64 6f 00                        retirado.
+
+000001f1 <msgPresenceStatusEnt>:
+     1f1:	20 63 6f 6c 6f 63 61 64 6f 00                        colocado.
+
+000001fb <msgPresenceStatus>:
+     1fb:	43 6f 70 6f 20 00                                   Copo .
+
+00000201 <msgPresence>:
+     201:	41 67 75 61 72 64 61 6e 64 6f 20 61 20 00           Aguardando a .
+
+0000020f <msgInicio2>:
+     20f:	56 61 69 20 75 6d 20 63 61 66 65 3f 00              Vai um cafe?.
+
+0000021c <msgInicio>:
+     21c:	42 65 6d 2d 76 69 6e 64 6f 28 61 29 00              Bem-vindo(a).
+
+00000229 <nadaAnimation>:
+     229:	20 20 20 00 00                                         ..
+
+0000022e <__ctors_end>:
+     22e:	11 24       	eor	r1, r1
+     230:	1f be       	out	0x3f, r1	; 63
+     232:	cf ef       	ldi	r28, 0xFF	; 255
+     234:	d8 e0       	ldi	r29, 0x08	; 8
+     236:	de bf       	out	0x3e, r29	; 62
+     238:	cd bf       	out	0x3d, r28	; 61
+
+0000023a <__do_copy_data>:
+     23a:	11 e0       	ldi	r17, 0x01	; 1
+     23c:	a0 e0       	ldi	r26, 0x00	; 0
+     23e:	b1 e0       	ldi	r27, 0x01	; 1
+     240:	e2 e9       	ldi	r30, 0x92	; 146
+     242:	f1 e1       	ldi	r31, 0x11	; 17
+     244:	02 c0       	rjmp	.+4      	; 0x24a <__do_copy_data+0x10>
+     246:	05 90       	lpm	r0, Z+
+     248:	0d 92       	st	X+, r0
+     24a:	aa 30       	cpi	r26, 0x0A	; 10
+     24c:	b1 07       	cpc	r27, r17
+     24e:	d9 f7       	brne	.-10     	; 0x246 <__do_copy_data+0xc>
+
+00000250 <__do_clear_bss>:
+     250:	21 e0       	ldi	r18, 0x01	; 1
+     252:	aa e0       	ldi	r26, 0x0A	; 10
+     254:	b1 e0       	ldi	r27, 0x01	; 1
+     256:	01 c0       	rjmp	.+2      	; 0x25a <.do_clear_bss_start>
+
+00000258 <.do_clear_bss_loop>:
+     258:	1d 92       	st	X+, r1
+
+0000025a <.do_clear_bss_start>:
+     25a:	aa 31       	cpi	r26, 0x1A	; 26
+     25c:	b2 07       	cpc	r27, r18
+     25e:	e1 f7       	brne	.-8      	; 0x258 <.do_clear_bss_loop>
+     260:	0e 94 05 08 	call	0x100a	; 0x100a <main>
+     264:	0c 94 c7 08 	jmp	0x118e	; 0x118e <_exit>
+
+00000268 <__bad_interrupt>:
+     268:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000026c <cmd_LCD>:
+//---------------------------------------------------------------------------------------------
+//Sub-rotina de escrita no LCD -  dados armazenados na RAM
+//---------------------------------------------------------------------------------------------
+void escreve_LCD(char *c){
+   for (; *c!=0;c++) cmd_LCD(*c,1);
+}
+     26c:	61 11       	cpse	r22, r1
+     26e:	02 c0       	rjmp	.+4      	; 0x274 <cmd_LCD+0x8>
+     270:	5c 98       	cbi	0x0b, 4	; 11
+     272:	01 c0       	rjmp	.+2      	; 0x276 <cmd_LCD+0xa>
+     274:	5c 9a       	sbi	0x0b, 4	; 11
+     276:	9b b1       	in	r25, 0x0b	; 11
+     278:	90 7f       	andi	r25, 0xF0	; 240
+     27a:	28 2f       	mov	r18, r24
+     27c:	22 95       	swap	r18
+     27e:	2f 70       	andi	r18, 0x0F	; 15
+     280:	92 2b       	or	r25, r18
+     282:	9b b9       	out	0x0b, r25	; 11
+     284:	95 e0       	ldi	r25, 0x05	; 5
+     286:	9a 95       	dec	r25
+     288:	f1 f7       	brne	.-4      	; 0x286 <cmd_LCD+0x1a>
+     28a:	00 00       	nop
+     28c:	5d 9a       	sbi	0x0b, 5	; 11
+     28e:	95 e0       	ldi	r25, 0x05	; 5
+     290:	9a 95       	dec	r25
+     292:	f1 f7       	brne	.-4      	; 0x290 <cmd_LCD+0x24>
+     294:	00 00       	nop
+     296:	5d 98       	cbi	0x0b, 5	; 11
+     298:	90 ef       	ldi	r25, 0xF0	; 240
+     29a:	9a 95       	dec	r25
+     29c:	f1 f7       	brne	.-4      	; 0x29a <cmd_LCD+0x2e>
+     29e:	9b b1       	in	r25, 0x0b	; 11
+     2a0:	90 7f       	andi	r25, 0xF0	; 240
+     2a2:	28 2f       	mov	r18, r24
+     2a4:	2f 70       	andi	r18, 0x0F	; 15
+     2a6:	92 2b       	or	r25, r18
+     2a8:	9b b9       	out	0x0b, r25	; 11
+     2aa:	95 e0       	ldi	r25, 0x05	; 5
+     2ac:	9a 95       	dec	r25
+     2ae:	f1 f7       	brne	.-4      	; 0x2ac <cmd_LCD+0x40>
+     2b0:	00 00       	nop
+     2b2:	5d 9a       	sbi	0x0b, 5	; 11
+     2b4:	95 e0       	ldi	r25, 0x05	; 5
+     2b6:	9a 95       	dec	r25
+     2b8:	f1 f7       	brne	.-4      	; 0x2b6 <cmd_LCD+0x4a>
+     2ba:	00 00       	nop
+     2bc:	5d 98       	cbi	0x0b, 5	; 11
+     2be:	90 ef       	ldi	r25, 0xF0	; 240
+     2c0:	9a 95       	dec	r25
+     2c2:	f1 f7       	brne	.-4      	; 0x2c0 <cmd_LCD+0x54>
+     2c4:	61 11       	cpse	r22, r1
+     2c6:	08 c0       	rjmp	.+16     	; 0x2d8 <cmd_LCD+0x6c>
+     2c8:	84 30       	cpi	r24, 0x04	; 4
+     2ca:	30 f4       	brcc	.+12     	; 0x2d8 <cmd_LCD+0x6c>
+     2cc:	8f e3       	ldi	r24, 0x3F	; 63
+     2ce:	9f e1       	ldi	r25, 0x1F	; 31
+     2d0:	01 97       	sbiw	r24, 0x01	; 1
+     2d2:	f1 f7       	brne	.-4      	; 0x2d0 <cmd_LCD+0x64>
+     2d4:	00 c0       	rjmp	.+0      	; 0x2d6 <cmd_LCD+0x6a>
+     2d6:	00 00       	nop
+     2d8:	08 95       	ret
+
+000002da <inic_LCD_4bits>:
+     2da:	5c 98       	cbi	0x0b, 4	; 11
+     2dc:	5d 98       	cbi	0x0b, 5	; 11
+     2de:	2f ef       	ldi	r18, 0xFF	; 255
+     2e0:	89 ef       	ldi	r24, 0xF9	; 249
+     2e2:	90 e0       	ldi	r25, 0x00	; 0
+     2e4:	21 50       	subi	r18, 0x01	; 1
+     2e6:	80 40       	sbci	r24, 0x00	; 0
+     2e8:	90 40       	sbci	r25, 0x00	; 0
+     2ea:	e1 f7       	brne	.-8      	; 0x2e4 <inic_LCD_4bits+0xa>
+     2ec:	00 c0       	rjmp	.+0      	; 0x2ee <inic_LCD_4bits+0x14>
+     2ee:	00 00       	nop
+     2f0:	8b b1       	in	r24, 0x0b	; 11
+     2f2:	80 7f       	andi	r24, 0xF0	; 240
+     2f4:	83 60       	ori	r24, 0x03	; 3
+     2f6:	8b b9       	out	0x0b, r24	; 11
+     2f8:	25 e0       	ldi	r18, 0x05	; 5
+     2fa:	2a 95       	dec	r18
+     2fc:	f1 f7       	brne	.-4      	; 0x2fa <inic_LCD_4bits+0x20>
+     2fe:	00 00       	nop
+     300:	5d 9a       	sbi	0x0b, 5	; 11
+     302:	85 e0       	ldi	r24, 0x05	; 5
+     304:	8a 95       	dec	r24
+     306:	f1 f7       	brne	.-4      	; 0x304 <inic_LCD_4bits+0x2a>
+     308:	00 00       	nop
+     30a:	5d 98       	cbi	0x0b, 5	; 11
+     30c:	90 ef       	ldi	r25, 0xF0	; 240
+     30e:	9a 95       	dec	r25
+     310:	f1 f7       	brne	.-4      	; 0x30e <inic_LCD_4bits+0x34>
+     312:	8f e1       	ldi	r24, 0x1F	; 31
+     314:	9e e4       	ldi	r25, 0x4E	; 78
+     316:	01 97       	sbiw	r24, 0x01	; 1
+     318:	f1 f7       	brne	.-4      	; 0x316 <inic_LCD_4bits+0x3c>
+     31a:	00 c0       	rjmp	.+0      	; 0x31c <inic_LCD_4bits+0x42>
+     31c:	00 00       	nop
+     31e:	95 e0       	ldi	r25, 0x05	; 5
+     320:	9a 95       	dec	r25
+     322:	f1 f7       	brne	.-4      	; 0x320 <inic_LCD_4bits+0x46>
+     324:	00 00       	nop
+     326:	5d 9a       	sbi	0x0b, 5	; 11
+     328:	25 e0       	ldi	r18, 0x05	; 5
+     32a:	2a 95       	dec	r18
+     32c:	f1 f7       	brne	.-4      	; 0x32a <inic_LCD_4bits+0x50>
+     32e:	00 00       	nop
+     330:	5d 98       	cbi	0x0b, 5	; 11
+     332:	80 ef       	ldi	r24, 0xF0	; 240
+     334:	8a 95       	dec	r24
+     336:	f1 f7       	brne	.-4      	; 0x334 <inic_LCD_4bits+0x5a>
+     338:	8f e1       	ldi	r24, 0x1F	; 31
+     33a:	93 e0       	ldi	r25, 0x03	; 3
+     33c:	01 97       	sbiw	r24, 0x01	; 1
+     33e:	f1 f7       	brne	.-4      	; 0x33c <inic_LCD_4bits+0x62>
+     340:	00 c0       	rjmp	.+0      	; 0x342 <inic_LCD_4bits+0x68>
+     342:	00 00       	nop
+     344:	95 e0       	ldi	r25, 0x05	; 5
+     346:	9a 95       	dec	r25
+     348:	f1 f7       	brne	.-4      	; 0x346 <inic_LCD_4bits+0x6c>
+     34a:	00 00       	nop
+     34c:	5d 9a       	sbi	0x0b, 5	; 11
+     34e:	25 e0       	ldi	r18, 0x05	; 5
+     350:	2a 95       	dec	r18
+     352:	f1 f7       	brne	.-4      	; 0x350 <inic_LCD_4bits+0x76>
+     354:	00 00       	nop
+     356:	5d 98       	cbi	0x0b, 5	; 11
+     358:	80 ef       	ldi	r24, 0xF0	; 240
+     35a:	8a 95       	dec	r24
+     35c:	f1 f7       	brne	.-4      	; 0x35a <inic_LCD_4bits+0x80>
+     35e:	8b b1       	in	r24, 0x0b	; 11
+     360:	80 7f       	andi	r24, 0xF0	; 240
+     362:	82 60       	ori	r24, 0x02	; 2
+     364:	8b b9       	out	0x0b, r24	; 11
+     366:	95 e0       	ldi	r25, 0x05	; 5
+     368:	9a 95       	dec	r25
+     36a:	f1 f7       	brne	.-4      	; 0x368 <inic_LCD_4bits+0x8e>
+     36c:	00 00       	nop
+     36e:	5d 9a       	sbi	0x0b, 5	; 11
+     370:	25 e0       	ldi	r18, 0x05	; 5
+     372:	2a 95       	dec	r18
+     374:	f1 f7       	brne	.-4      	; 0x372 <inic_LCD_4bits+0x98>
+     376:	00 00       	nop
+     378:	5d 98       	cbi	0x0b, 5	; 11
+     37a:	80 ef       	ldi	r24, 0xF0	; 240
+     37c:	8a 95       	dec	r24
+     37e:	f1 f7       	brne	.-4      	; 0x37c <inic_LCD_4bits+0xa2>
+     380:	60 e0       	ldi	r22, 0x00	; 0
+     382:	88 e2       	ldi	r24, 0x28	; 40
+     384:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     388:	60 e0       	ldi	r22, 0x00	; 0
+     38a:	88 e0       	ldi	r24, 0x08	; 8
+     38c:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     390:	60 e0       	ldi	r22, 0x00	; 0
+     392:	81 e0       	ldi	r24, 0x01	; 1
+     394:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     398:	60 e0       	ldi	r22, 0x00	; 0
+     39a:	8c e0       	ldi	r24, 0x0C	; 12
+     39c:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     3a0:	60 e0       	ldi	r22, 0x00	; 0
+     3a2:	80 e8       	ldi	r24, 0x80	; 128
+     3a4:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     3a8:	08 95       	ret
+
+000003aa <escreve_LCD_Flash>:
+//---------------------------------------------------------------------------------------------
+//Sub-rotina de escrita no LCD - dados armazenados na FLASH
+//---------------------------------------------------------------------------------------------
+void escreve_LCD_Flash(const char *c){
+     3aa:	cf 93       	push	r28
+     3ac:	df 93       	push	r29
+     3ae:	ec 01       	movw	r28, r24
+   for (;pgm_read_byte(&(*c))!=0;c++) cmd_LCD(pgm_read_byte(&(*c)),1);
+     3b0:	fc 01       	movw	r30, r24
+     3b2:	84 91       	lpm	r24, Z
+     3b4:	88 23       	and	r24, r24
+     3b6:	51 f0       	breq	.+20     	; 0x3cc <escreve_LCD_Flash+0x22>
+     3b8:	fe 01       	movw	r30, r28
+     3ba:	84 91       	lpm	r24, Z
+     3bc:	61 e0       	ldi	r22, 0x01	; 1
+     3be:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     3c2:	21 96       	adiw	r28, 0x01	; 1
+     3c4:	fe 01       	movw	r30, r28
+     3c6:	84 91       	lpm	r24, Z
+     3c8:	81 11       	cpse	r24, r1
+     3ca:	f6 cf       	rjmp	.-20     	; 0x3b8 <escreve_LCD_Flash+0xe>
+}
+     3cc:	df 91       	pop	r29
+     3ce:	cf 91       	pop	r28
+     3d0:	08 95       	ret
+
+000003d2 <conversorNumeros2>:
+
+void mandaString(char text[16]){
+	for(int i = 0; text[i] != 0; i++){
+		cmd_LCD(text[i], 1);
+	}
+}
+     3d2:	cf 93       	push	r28
+     3d4:	c8 2f       	mov	r28, r24
+     3d6:	86 2f       	mov	r24, r22
+     3d8:	60 e0       	ldi	r22, 0x00	; 0
+     3da:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     3de:	61 e0       	ldi	r22, 0x01	; 1
+     3e0:	80 e3       	ldi	r24, 0x30	; 48
+     3e2:	8c 0f       	add	r24, r28
+     3e4:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     3e8:	cf 91       	pop	r28
+     3ea:	08 95       	ret
+
+000003ec <conversorNumeros>:
+     3ec:	1f 93       	push	r17
+     3ee:	cf 93       	push	r28
+     3f0:	df 93       	push	r29
+     3f2:	c6 2f       	mov	r28, r22
+     3f4:	8a 30       	cpi	r24, 0x0A	; 10
+     3f6:	91 05       	cpc	r25, r1
+     3f8:	ac f0       	brlt	.+42     	; 0x424 <__LOCK_REGION_LENGTH__+0x24>
+     3fa:	6a e0       	ldi	r22, 0x0A	; 10
+     3fc:	70 e0       	ldi	r23, 0x00	; 0
+     3fe:	0e 94 99 08 	call	0x1132	; 0x1132 <__divmodhi4>
+     402:	16 2f       	mov	r17, r22
+     404:	d8 2f       	mov	r29, r24
+     406:	60 e0       	ldi	r22, 0x00	; 0
+     408:	8c 2f       	mov	r24, r28
+     40a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     40e:	61 e0       	ldi	r22, 0x01	; 1
+     410:	80 e3       	ldi	r24, 0x30	; 48
+     412:	81 0f       	add	r24, r17
+     414:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     418:	61 e0       	ldi	r22, 0x01	; 1
+     41a:	80 e3       	ldi	r24, 0x30	; 48
+     41c:	8d 0f       	add	r24, r29
+     41e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     422:	0b c0       	rjmp	.+22     	; 0x43a <__LOCK_REGION_LENGTH__+0x3a>
+     424:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+     428:	60 e0       	ldi	r22, 0x00	; 0
+     42a:	81 e0       	ldi	r24, 0x01	; 1
+     42c:	8c 0f       	add	r24, r28
+     42e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     432:	61 e0       	ldi	r22, 0x01	; 1
+     434:	80 e2       	ldi	r24, 0x20	; 32
+     436:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     43a:	df 91       	pop	r29
+     43c:	cf 91       	pop	r28
+     43e:	1f 91       	pop	r17
+     440:	08 95       	ret
+
+00000442 <selectType>:
+     442:	cf 93       	push	r28
+     444:	c6 2f       	mov	r28, r22
+     446:	81 30       	cpi	r24, 0x01	; 1
+     448:	91 05       	cpc	r25, r1
+     44a:	d9 f4       	brne	.+54     	; 0x482 <selectType+0x40>
+     44c:	60 e0       	ldi	r22, 0x00	; 0
+     44e:	8c 2f       	mov	r24, r28
+     450:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     454:	61 e0       	ldi	r22, 0x01	; 1
+     456:	8e e3       	ldi	r24, 0x3E	; 62
+     458:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     45c:	60 e0       	ldi	r22, 0x00	; 0
+     45e:	85 e0       	ldi	r24, 0x05	; 5
+     460:	8c 0f       	add	r24, r28
+     462:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     466:	61 e0       	ldi	r22, 0x01	; 1
+     468:	80 e2       	ldi	r24, 0x20	; 32
+     46a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     46e:	60 e0       	ldi	r22, 0x00	; 0
+     470:	8a e0       	ldi	r24, 0x0A	; 10
+     472:	8c 0f       	add	r24, r28
+     474:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     478:	61 e0       	ldi	r22, 0x01	; 1
+     47a:	80 e2       	ldi	r24, 0x20	; 32
+     47c:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     480:	3a c0       	rjmp	.+116    	; 0x4f6 <selectType+0xb4>
+     482:	82 30       	cpi	r24, 0x02	; 2
+     484:	91 05       	cpc	r25, r1
+     486:	d9 f4       	brne	.+54     	; 0x4be <selectType+0x7c>
+     488:	60 e0       	ldi	r22, 0x00	; 0
+     48a:	85 e0       	ldi	r24, 0x05	; 5
+     48c:	8c 0f       	add	r24, r28
+     48e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     492:	61 e0       	ldi	r22, 0x01	; 1
+     494:	8e e3       	ldi	r24, 0x3E	; 62
+     496:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     49a:	60 e0       	ldi	r22, 0x00	; 0
+     49c:	8c 2f       	mov	r24, r28
+     49e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4a2:	61 e0       	ldi	r22, 0x01	; 1
+     4a4:	80 e2       	ldi	r24, 0x20	; 32
+     4a6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4aa:	60 e0       	ldi	r22, 0x00	; 0
+     4ac:	8a e0       	ldi	r24, 0x0A	; 10
+     4ae:	8c 0f       	add	r24, r28
+     4b0:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4b4:	61 e0       	ldi	r22, 0x01	; 1
+     4b6:	80 e2       	ldi	r24, 0x20	; 32
+     4b8:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4bc:	1c c0       	rjmp	.+56     	; 0x4f6 <selectType+0xb4>
+     4be:	03 97       	sbiw	r24, 0x03	; 3
+     4c0:	d1 f4       	brne	.+52     	; 0x4f6 <selectType+0xb4>
+     4c2:	60 e0       	ldi	r22, 0x00	; 0
+     4c4:	8a e0       	ldi	r24, 0x0A	; 10
+     4c6:	8c 0f       	add	r24, r28
+     4c8:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4cc:	61 e0       	ldi	r22, 0x01	; 1
+     4ce:	8e e3       	ldi	r24, 0x3E	; 62
+     4d0:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4d4:	60 e0       	ldi	r22, 0x00	; 0
+     4d6:	8c 2f       	mov	r24, r28
+     4d8:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4dc:	61 e0       	ldi	r22, 0x01	; 1
+     4de:	80 e2       	ldi	r24, 0x20	; 32
+     4e0:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4e4:	60 e0       	ldi	r22, 0x00	; 0
+     4e6:	85 e0       	ldi	r24, 0x05	; 5
+     4e8:	8c 0f       	add	r24, r28
+     4ea:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4ee:	61 e0       	ldi	r22, 0x01	; 1
+     4f0:	80 e2       	ldi	r24, 0x20	; 32
+     4f2:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     4f6:	cf 91       	pop	r28
+     4f8:	08 95       	ret
+
+000004fa <respYesOrNo>:
+     4fa:	cf 93       	push	r28
+     4fc:	c6 2f       	mov	r28, r22
+     4fe:	00 97       	sbiw	r24, 0x00	; 0
+     500:	91 f4       	brne	.+36     	; 0x526 <respYesOrNo+0x2c>
+     502:	60 e0       	ldi	r22, 0x00	; 0
+     504:	8c 2f       	mov	r24, r28
+     506:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     50a:	61 e0       	ldi	r22, 0x01	; 1
+     50c:	8e e3       	ldi	r24, 0x3E	; 62
+     50e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     512:	60 e0       	ldi	r22, 0x00	; 0
+     514:	87 e0       	ldi	r24, 0x07	; 7
+     516:	8c 0f       	add	r24, r28
+     518:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     51c:	61 e0       	ldi	r22, 0x01	; 1
+     51e:	80 e2       	ldi	r24, 0x20	; 32
+     520:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     524:	13 c0       	rjmp	.+38     	; 0x54c <respYesOrNo+0x52>
+     526:	01 97       	sbiw	r24, 0x01	; 1
+     528:	89 f4       	brne	.+34     	; 0x54c <respYesOrNo+0x52>
+     52a:	60 e0       	ldi	r22, 0x00	; 0
+     52c:	87 e0       	ldi	r24, 0x07	; 7
+     52e:	8c 0f       	add	r24, r28
+     530:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     534:	61 e0       	ldi	r22, 0x01	; 1
+     536:	8e e3       	ldi	r24, 0x3E	; 62
+     538:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     53c:	60 e0       	ldi	r22, 0x00	; 0
+     53e:	8c 2f       	mov	r24, r28
+     540:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     544:	61 e0       	ldi	r22, 0x01	; 1
+     546:	80 e2       	ldi	r24, 0x20	; 32
+     548:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     54c:	cf 91       	pop	r28
+     54e:	08 95       	ret
+
+00000550 <my_delay_ms>:
+     550:	18 16       	cp	r1, r24
+     552:	19 06       	cpc	r1, r25
+     554:	44 f4       	brge	.+16     	; 0x566 <my_delay_ms+0x16>
+     556:	ef e9       	ldi	r30, 0x9F	; 159
+     558:	ff e0       	ldi	r31, 0x0F	; 15
+     55a:	31 97       	sbiw	r30, 0x01	; 1
+     55c:	f1 f7       	brne	.-4      	; 0x55a <my_delay_ms+0xa>
+     55e:	00 c0       	rjmp	.+0      	; 0x560 <my_delay_ms+0x10>
+     560:	00 00       	nop
+     562:	01 97       	sbiw	r24, 0x01	; 1
+     564:	c1 f7       	brne	.-16     	; 0x556 <my_delay_ms+0x6>
+     566:	08 95       	ret
+
+00000568 <inicio>:
+
+void inicio(){
+	cmd_LCD(0x01,0); // limpa lcd
+     568:	60 e0       	ldi	r22, 0x00	; 0
+     56a:	81 e0       	ldi	r24, 0x01	; 1
+     56c:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x14, 0); // Segunda linha, posição 0
+     570:	60 e0       	ldi	r22, 0x00	; 0
+     572:	84 e1       	ldi	r24, 0x14	; 20
+     574:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	for(int i = 0; tst_bit(PINC, 0); i++){
+     578:	30 9b       	sbis	0x06, 0	; 6
+     57a:	23 c0       	rjmp	.+70     	; 0x5c2 <inicio+0x5a>
+		cmd_LCD(0x80, 0); //Primeira linha, posição 0
+     57c:	60 e0       	ldi	r22, 0x00	; 0
+     57e:	80 e8       	ldi	r24, 0x80	; 128
+     580:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgInicio);
+     584:	8c e1       	ldi	r24, 0x1C	; 28
+     586:	92 e0       	ldi	r25, 0x02	; 2
+     588:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		cmd_LCD(0xC0, 0); // Segunda linha, posição 0
+     58c:	60 e0       	ldi	r22, 0x00	; 0
+     58e:	80 ec       	ldi	r24, 0xC0	; 192
+     590:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgInicio2);
+     594:	8f e0       	ldi	r24, 0x0F	; 15
+     596:	92 e0       	ldi	r25, 0x02	; 2
+     598:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		cmd_LCD(0x00, 1);
+     59c:	61 e0       	ldi	r22, 0x01	; 1
+     59e:	80 e0       	ldi	r24, 0x00	; 0
+     5a0:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		cmd_LCD(0x1C, 0); // move para a direita.
+     5a4:	60 e0       	ldi	r22, 0x00	; 0
+     5a6:	8c e1       	ldi	r24, 0x1C	; 28
+     5a8:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+     5ac:	2f ef       	ldi	r18, 0xFF	; 255
+     5ae:	82 e5       	ldi	r24, 0x52	; 82
+     5b0:	97 e0       	ldi	r25, 0x07	; 7
+     5b2:	21 50       	subi	r18, 0x01	; 1
+     5b4:	80 40       	sbci	r24, 0x00	; 0
+     5b6:	90 40       	sbci	r25, 0x00	; 0
+     5b8:	e1 f7       	brne	.-8      	; 0x5b2 <inicio+0x4a>
+     5ba:	00 c0       	rjmp	.+0      	; 0x5bc <inicio+0x54>
+     5bc:	00 00       	nop
+}
+
+void inicio(){
+	cmd_LCD(0x01,0); // limpa lcd
+	cmd_LCD(0x14, 0); // Segunda linha, posição 0
+	for(int i = 0; tst_bit(PINC, 0); i++){
+     5be:	30 99       	sbic	0x06, 0	; 6
+     5c0:	dd cf       	rjmp	.-70     	; 0x57c <inicio+0x14>
+		escreve_LCD_Flash(msgInicio2);
+		cmd_LCD(0x00, 1);
+		cmd_LCD(0x1C, 0); // move para a direita.
+		_delay_ms(150);
+	}
+	cmd_LCD(0x80, 0); // Primeira linha, posição 0
+     5c2:	60 e0       	ldi	r22, 0x00	; 0
+     5c4:	80 e8       	ldi	r24, 0x80	; 128
+     5c6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x01,0); // limpa lcd
+     5ca:	60 e0       	ldi	r22, 0x00	; 0
+     5cc:	81 e0       	ldi	r24, 0x01	; 1
+     5ce:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     5d2:	08 95       	ret
+
+000005d4 <configQuantSystem2>:
+}
+
+void configQuantSystem2(unsigned int min, unsigned int lim, int *pointVar, unsigned char position, void (*func)(int, unsigned char)){
+     5d4:	bf 92       	push	r11
+     5d6:	cf 92       	push	r12
+     5d8:	df 92       	push	r13
+     5da:	ef 92       	push	r14
+     5dc:	ff 92       	push	r15
+     5de:	0f 93       	push	r16
+     5e0:	1f 93       	push	r17
+     5e2:	cf 93       	push	r28
+     5e4:	df 93       	push	r29
+     5e6:	6c 01       	movw	r12, r24
+     5e8:	7b 01       	movw	r14, r22
+     5ea:	ea 01       	movw	r28, r20
+     5ec:	b2 2e       	mov	r11, r18
+	(*func)(*pointVar, position);
+     5ee:	62 2f       	mov	r22, r18
+     5f0:	88 81       	ld	r24, Y
+     5f2:	99 81       	ldd	r25, Y+1	; 0x01
+     5f4:	f8 01       	movw	r30, r16
+     5f6:	09 95       	icall
+	while(tst_bit(PINC, ENTER)){
+     5f8:	37 c0       	rjmp	.+110    	; 0x668 <configQuantSystem2+0x94>
+		if (!tst_bit(PINC, BMAIS)){
+     5fa:	31 99       	sbic	0x06, 1	; 6
+     5fc:	1f c0       	rjmp	.+62     	; 0x63c <configQuantSystem2+0x68>
+			if(*pointVar == lim){
+     5fe:	88 81       	ld	r24, Y
+     600:	99 81       	ldd	r25, Y+1	; 0x01
+     602:	8e 15       	cp	r24, r14
+     604:	9f 05       	cpc	r25, r15
+     606:	39 f4       	brne	.+14     	; 0x616 <configQuantSystem2+0x42>
+				*pointVar = min;
+     608:	d9 82       	std	Y+1, r13	; 0x01
+     60a:	c8 82       	st	Y, r12
+				(*func)(*pointVar, position);
+     60c:	6b 2d       	mov	r22, r11
+     60e:	c6 01       	movw	r24, r12
+     610:	f8 01       	movw	r30, r16
+     612:	09 95       	icall
+     614:	09 c0       	rjmp	.+18     	; 0x628 <configQuantSystem2+0x54>
+			}
+			else if (*pointVar < lim){
+     616:	8e 15       	cp	r24, r14
+     618:	9f 05       	cpc	r25, r15
+     61a:	30 f4       	brcc	.+12     	; 0x628 <configQuantSystem2+0x54>
+				*pointVar = *pointVar + 1;
+     61c:	01 96       	adiw	r24, 0x01	; 1
+     61e:	99 83       	std	Y+1, r25	; 0x01
+     620:	88 83       	st	Y, r24
+				(*func)(*pointVar, position);
+     622:	6b 2d       	mov	r22, r11
+     624:	f8 01       	movw	r30, r16
+     626:	09 95       	icall
+     628:	ff ef       	ldi	r31, 0xFF	; 255
+     62a:	24 e3       	ldi	r18, 0x34	; 52
+     62c:	8c e0       	ldi	r24, 0x0C	; 12
+     62e:	f1 50       	subi	r31, 0x01	; 1
+     630:	20 40       	sbci	r18, 0x00	; 0
+     632:	80 40       	sbci	r24, 0x00	; 0
+     634:	e1 f7       	brne	.-8      	; 0x62e <configQuantSystem2+0x5a>
+     636:	00 c0       	rjmp	.+0      	; 0x638 <configQuantSystem2+0x64>
+     638:	00 00       	nop
+     63a:	16 c0       	rjmp	.+44     	; 0x668 <configQuantSystem2+0x94>
+			}
+			_delay_ms(250);
+		}
+		else if(!tst_bit(PINC, BMENOS)){
+     63c:	32 99       	sbic	0x06, 2	; 6
+     63e:	14 c0       	rjmp	.+40     	; 0x668 <configQuantSystem2+0x94>
+			if(*pointVar != min){
+     640:	88 81       	ld	r24, Y
+     642:	99 81       	ldd	r25, Y+1	; 0x01
+     644:	c8 16       	cp	r12, r24
+     646:	d9 06       	cpc	r13, r25
+     648:	31 f0       	breq	.+12     	; 0x656 <configQuantSystem2+0x82>
+				*pointVar = *pointVar - 1;
+     64a:	01 97       	sbiw	r24, 0x01	; 1
+     64c:	99 83       	std	Y+1, r25	; 0x01
+     64e:	88 83       	st	Y, r24
+				(*func)(*pointVar, position);
+     650:	6b 2d       	mov	r22, r11
+     652:	f8 01       	movw	r30, r16
+     654:	09 95       	icall
+     656:	ff ef       	ldi	r31, 0xFF	; 255
+     658:	24 e3       	ldi	r18, 0x34	; 52
+     65a:	8c e0       	ldi	r24, 0x0C	; 12
+     65c:	f1 50       	subi	r31, 0x01	; 1
+     65e:	20 40       	sbci	r18, 0x00	; 0
+     660:	80 40       	sbci	r24, 0x00	; 0
+     662:	e1 f7       	brne	.-8      	; 0x65c <configQuantSystem2+0x88>
+     664:	00 c0       	rjmp	.+0      	; 0x666 <configQuantSystem2+0x92>
+     666:	00 00       	nop
+	cmd_LCD(0x01,0); // limpa lcd
+}
+
+void configQuantSystem2(unsigned int min, unsigned int lim, int *pointVar, unsigned char position, void (*func)(int, unsigned char)){
+	(*func)(*pointVar, position);
+	while(tst_bit(PINC, ENTER)){
+     668:	33 99       	sbic	0x06, 3	; 6
+     66a:	c7 cf       	rjmp	.-114    	; 0x5fa <configQuantSystem2+0x26>
+				(*func)(*pointVar, position);
+			}
+			_delay_ms(250);
+		}
+	}
+	(*func)(*pointVar, position);
+     66c:	6b 2d       	mov	r22, r11
+     66e:	88 81       	ld	r24, Y
+     670:	99 81       	ldd	r25, Y+1	; 0x01
+     672:	f8 01       	movw	r30, r16
+     674:	09 95       	icall
+}
+     676:	df 91       	pop	r29
+     678:	cf 91       	pop	r28
+     67a:	1f 91       	pop	r17
+     67c:	0f 91       	pop	r16
+     67e:	ff 90       	pop	r15
+     680:	ef 90       	pop	r14
+     682:	df 90       	pop	r13
+     684:	cf 90       	pop	r12
+     686:	bf 90       	pop	r11
+     688:	08 95       	ret
+
+0000068a <configQuantCopo>:
+
+void configQuantCopo(){
+     68a:	0f 93       	push	r16
+     68c:	1f 93       	push	r17
+	cmd_LCD(0x01,0); // limpa lcd
+     68e:	60 e0       	ldi	r22, 0x00	; 0
+     690:	81 e0       	ldi	r24, 0x01	; 1
+     692:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80, 0);
+     696:	60 e0       	ldi	r22, 0x00	; 0
+     698:	80 e8       	ldi	r24, 0x80	; 128
+     69a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigQuantCopo);
+     69e:	8e eb       	ldi	r24, 0xBE	; 190
+     6a0:	91 e0       	ldi	r25, 0x01	; 1
+     6a2:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	cmd_LCD(0xC0, 0);
+     6a6:	60 e0       	ldi	r22, 0x00	; 0
+     6a8:	80 ec       	ldi	r24, 0xC0	; 192
+     6aa:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigQuantCopo1);
+     6ae:	8f ea       	ldi	r24, 0xAF	; 175
+     6b0:	91 e0       	ldi	r25, 0x01	; 1
+     6b2:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	configQuantSystem2(1, 2, &quantCopo, 0xCF, conversorNumeros2);
+     6b6:	09 ee       	ldi	r16, 0xE9	; 233
+     6b8:	11 e0       	ldi	r17, 0x01	; 1
+     6ba:	2f ec       	ldi	r18, 0xCF	; 207
+     6bc:	44 e0       	ldi	r20, 0x04	; 4
+     6be:	51 e0       	ldi	r21, 0x01	; 1
+     6c0:	62 e0       	ldi	r22, 0x02	; 2
+     6c2:	70 e0       	ldi	r23, 0x00	; 0
+     6c4:	81 e0       	ldi	r24, 0x01	; 1
+     6c6:	90 e0       	ldi	r25, 0x00	; 0
+     6c8:	0e 94 ea 02 	call	0x5d4	; 0x5d4 <configQuantSystem2>
+	//configQuantSystem(2, &quantCopo, 0xCF);
+}
+     6cc:	1f 91       	pop	r17
+     6ce:	0f 91       	pop	r16
+     6d0:	08 95       	ret
+
+000006d2 <configTypeCopo>:
+
+void configTypeCopo(){
+     6d2:	ef 92       	push	r14
+     6d4:	ff 92       	push	r15
+     6d6:	0f 93       	push	r16
+     6d8:	1f 93       	push	r17
+     6da:	cf 93       	push	r28
+     6dc:	df 93       	push	r29
+	cmd_LCD(0x01,0); // limpa lcd
+     6de:	60 e0       	ldi	r22, 0x00	; 0
+     6e0:	81 e0       	ldi	r24, 0x01	; 1
+     6e2:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80, 0);
+     6e6:	60 e0       	ldi	r22, 0x00	; 0
+     6e8:	80 e8       	ldi	r24, 0x80	; 128
+     6ea:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigTypeCopo);
+     6ee:	81 ea       	ldi	r24, 0xA1	; 161
+     6f0:	91 e0       	ldi	r25, 0x01	; 1
+     6f2:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	cmd_LCD(0xC0, 0);
+     6f6:	60 e0       	ldi	r22, 0x00	; 0
+     6f8:	80 ec       	ldi	r24, 0xC0	; 192
+     6fa:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigTypeCopo1);
+     6fe:	82 e9       	ldi	r24, 0x92	; 146
+     700:	91 e0       	ldi	r25, 0x01	; 1
+     702:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+     706:	2f ef       	ldi	r18, 0xFF	; 255
+     708:	8d e3       	ldi	r24, 0x3D	; 61
+     70a:	99 e4       	ldi	r25, 0x49	; 73
+     70c:	21 50       	subi	r18, 0x01	; 1
+     70e:	80 40       	sbci	r24, 0x00	; 0
+     710:	90 40       	sbci	r25, 0x00	; 0
+     712:	e1 f7       	brne	.-8      	; 0x70c <configTypeCopo+0x3a>
+     714:	00 c0       	rjmp	.+0      	; 0x716 <configTypeCopo+0x44>
+     716:	00 00       	nop
+	_delay_ms(1500);
+	cmd_LCD(0x01,0); // limpa lcd
+     718:	60 e0       	ldi	r22, 0x00	; 0
+     71a:	81 e0       	ldi	r24, 0x01	; 1
+     71c:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	for(int i = 0; i < quantCopo; ++i){
+     720:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     724:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     728:	18 16       	cp	r1, r24
+     72a:	19 06       	cpc	r1, r25
+     72c:	d4 f5       	brge	.+116    	; 0x7a2 <configTypeCopo+0xd0>
+     72e:	0f 2e       	mov	r0, r31
+     730:	f0 e0       	ldi	r31, 0x00	; 0
+     732:	ef 2e       	mov	r14, r31
+     734:	f1 e0       	ldi	r31, 0x01	; 1
+     736:	ff 2e       	mov	r15, r31
+     738:	f0 2d       	mov	r31, r0
+     73a:	c0 e0       	ldi	r28, 0x00	; 0
+     73c:	d0 e0       	ldi	r29, 0x00	; 0
+		cmd_LCD(0x80, 0);
+     73e:	60 e0       	ldi	r22, 0x00	; 0
+     740:	80 e8       	ldi	r24, 0x80	; 128
+     742:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgConfigTypeCop2);
+     746:	87 e8       	ldi	r24, 0x87	; 135
+     748:	91 e0       	ldi	r25, 0x01	; 1
+     74a:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		cmd_LCD(0xC0, 0);
+     74e:	60 e0       	ldi	r22, 0x00	; 0
+     750:	80 ec       	ldi	r24, 0xC0	; 192
+     752:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgConfigTypeCop);
+     756:	87 e7       	ldi	r24, 0x77	; 119
+     758:	91 e0       	ldi	r25, 0x01	; 1
+     75a:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		configQuantSystem2(1, 3, &(typeCopo[i]), 0xC0, selectType);
+     75e:	01 e2       	ldi	r16, 0x21	; 33
+     760:	12 e0       	ldi	r17, 0x02	; 2
+     762:	20 ec       	ldi	r18, 0xC0	; 192
+     764:	a7 01       	movw	r20, r14
+     766:	63 e0       	ldi	r22, 0x03	; 3
+     768:	70 e0       	ldi	r23, 0x00	; 0
+     76a:	81 e0       	ldi	r24, 0x01	; 1
+     76c:	90 e0       	ldi	r25, 0x00	; 0
+     76e:	0e 94 ea 02 	call	0x5d4	; 0x5d4 <configQuantSystem2>
+		cmd_LCD(0x01,0); // limpa lcd
+     772:	60 e0       	ldi	r22, 0x00	; 0
+     774:	81 e0       	ldi	r24, 0x01	; 1
+     776:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     77a:	2f ef       	ldi	r18, 0xFF	; 255
+     77c:	89 e6       	ldi	r24, 0x69	; 105
+     77e:	98 e1       	ldi	r25, 0x18	; 24
+     780:	21 50       	subi	r18, 0x01	; 1
+     782:	80 40       	sbci	r24, 0x00	; 0
+     784:	90 40       	sbci	r25, 0x00	; 0
+     786:	e1 f7       	brne	.-8      	; 0x780 <configTypeCopo+0xae>
+     788:	00 c0       	rjmp	.+0      	; 0x78a <configTypeCopo+0xb8>
+     78a:	00 00       	nop
+	escreve_LCD_Flash(msgConfigTypeCopo);
+	cmd_LCD(0xC0, 0);
+	escreve_LCD_Flash(msgConfigTypeCopo1);
+	_delay_ms(1500);
+	cmd_LCD(0x01,0); // limpa lcd
+	for(int i = 0; i < quantCopo; ++i){
+     78c:	21 96       	adiw	r28, 0x01	; 1
+     78e:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     792:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     796:	22 e0       	ldi	r18, 0x02	; 2
+     798:	e2 0e       	add	r14, r18
+     79a:	f1 1c       	adc	r15, r1
+     79c:	c8 17       	cp	r28, r24
+     79e:	d9 07       	cpc	r29, r25
+     7a0:	74 f2       	brlt	.-100    	; 0x73e <configTypeCopo+0x6c>
+		escreve_LCD_Flash(msgConfigTypeCop);
+		configQuantSystem2(1, 3, &(typeCopo[i]), 0xC0, selectType);
+		cmd_LCD(0x01,0); // limpa lcd
+		_delay_ms(500); // tempo para n crashar
+	}
+	if(quantCopo == 1){
+     7a2:	01 97       	sbiw	r24, 0x01	; 1
+     7a4:	21 f4       	brne	.+8      	; 0x7ae <configTypeCopo+0xdc>
+		typeCopo[1] = 0;
+     7a6:	10 92 03 01 	sts	0x0103, r1	; 0x800103 <__data_start+0x3>
+     7aa:	10 92 02 01 	sts	0x0102, r1	; 0x800102 <__data_start+0x2>
+	}
+}
+     7ae:	df 91       	pop	r29
+     7b0:	cf 91       	pop	r28
+     7b2:	1f 91       	pop	r17
+     7b4:	0f 91       	pop	r16
+     7b6:	ff 90       	pop	r15
+     7b8:	ef 90       	pop	r14
+     7ba:	08 95       	ret
+
+000007bc <colocarCafeMaquina>:
+		debbug(sub);
+	}
+	debbug(sub);
+}
+
+void colocarCafeMaquina(){
+     7bc:	0f 93       	push	r16
+     7be:	1f 93       	push	r17
+	cmd_LCD(0x01,0); // limpa lcd
+     7c0:	60 e0       	ldi	r22, 0x00	; 0
+     7c2:	81 e0       	ldi	r24, 0x01	; 1
+     7c4:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80, 0);
+     7c8:	60 e0       	ldi	r22, 0x00	; 0
+     7ca:	80 e8       	ldi	r24, 0x80	; 128
+     7cc:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigQuantCoffe);
+     7d0:	8a e6       	ldi	r24, 0x6A	; 106
+     7d2:	91 e0       	ldi	r25, 0x01	; 1
+     7d4:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	cmd_LCD(0xC0, 0);
+     7d8:	60 e0       	ldi	r22, 0x00	; 0
+     7da:	80 ec       	ldi	r24, 0xC0	; 192
+     7dc:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigQuantCoffe2);
+     7e0:	8e e5       	ldi	r24, 0x5E	; 94
+     7e2:	91 e0       	ldi	r25, 0x01	; 1
+     7e4:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	configQuantSystem2(1, 20, &cafeColocar, 0xCD, conversorNumeros);
+     7e8:	06 ef       	ldi	r16, 0xF6	; 246
+     7ea:	11 e0       	ldi	r17, 0x01	; 1
+     7ec:	2d ec       	ldi	r18, 0xCD	; 205
+     7ee:	48 e0       	ldi	r20, 0x08	; 8
+     7f0:	51 e0       	ldi	r21, 0x01	; 1
+     7f2:	64 e1       	ldi	r22, 0x14	; 20
+     7f4:	70 e0       	ldi	r23, 0x00	; 0
+     7f6:	81 e0       	ldi	r24, 0x01	; 1
+     7f8:	90 e0       	ldi	r25, 0x00	; 0
+     7fa:	0e 94 ea 02 	call	0x5d4	; 0x5d4 <configQuantSystem2>
+}
+     7fe:	1f 91       	pop	r17
+     800:	0f 91       	pop	r16
+     802:	08 95       	ret
+
+00000804 <debbug>:
+
+void debbug(unsigned int sub){
+     804:	cf 93       	push	r28
+     806:	df 93       	push	r29
+     808:	ec 01       	movw	r28, r24
+	cmd_LCD(0x01,0); // limpa lcd
+     80a:	60 e0       	ldi	r22, 0x00	; 0
+     80c:	81 e0       	ldi	r24, 0x01	; 1
+     80e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80, 0);
+     812:	60 e0       	ldi	r22, 0x00	; 0
+     814:	80 e8       	ldi	r24, 0x80	; 128
+     816:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgDebbugCoffe);
+     81a:	8e e3       	ldi	r24, 0x3E	; 62
+     81c:	91 e0       	ldi	r25, 0x01	; 1
+     81e:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	conversorNumeros(sub, 0x88);
+     822:	68 e8       	ldi	r22, 0x88	; 136
+     824:	ce 01       	movw	r24, r28
+     826:	0e 94 f6 01 	call	0x3ec	; 0x3ec <conversorNumeros>
+	cmd_LCD(0xC0, 0);
+     82a:	60 e0       	ldi	r22, 0x00	; 0
+     82c:	80 ec       	ldi	r24, 0xC0	; 192
+     82e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgDebbugCoffe2);
+     832:	81 e3       	ldi	r24, 0x31	; 49
+     834:	91 e0       	ldi	r25, 0x01	; 1
+     836:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	conversorNumeros(quantCoffe, 0xCB);
+     83a:	6b ec       	ldi	r22, 0xCB	; 203
+     83c:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <quantCoffe>
+     840:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <quantCoffe+0x1>
+     844:	0e 94 f6 01 	call	0x3ec	; 0x3ec <conversorNumeros>
+     848:	2f ef       	ldi	r18, 0xFF	; 255
+     84a:	87 ea       	ldi	r24, 0xA7	; 167
+     84c:	91 e6       	ldi	r25, 0x61	; 97
+     84e:	21 50       	subi	r18, 0x01	; 1
+     850:	80 40       	sbci	r24, 0x00	; 0
+     852:	90 40       	sbci	r25, 0x00	; 0
+     854:	e1 f7       	brne	.-8      	; 0x84e <debbug+0x4a>
+     856:	00 c0       	rjmp	.+0      	; 0x858 <debbug+0x54>
+     858:	00 00       	nop
+	_delay_ms(2000);
+}
+     85a:	df 91       	pop	r29
+     85c:	cf 91       	pop	r28
+     85e:	08 95       	ret
+
+00000860 <testeCoffe>:
+		}
+		_delay_ms(500); // tempo para n crashar
+	}
+}
+
+void testeCoffe(unsigned int sub){
+     860:	0f 93       	push	r16
+     862:	1f 93       	push	r17
+     864:	cf 93       	push	r28
+     866:	df 93       	push	r29
+     868:	ec 01       	movw	r28, r24
+	while(quantCoffe < 0){
+     86a:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <quantCoffe>
+     86e:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <quantCoffe+0x1>
+     872:	99 23       	and	r25, r25
+     874:	a4 f5       	brge	.+104    	; 0x8de <testeCoffe+0x7e>
+			quantCoffe -= sub;
+			quantCoffe += cafeColocar;
+		}
+		else {
+			quantCoffe -= sub;
+			cafeColocar = 1;
+     876:	01 e0       	ldi	r16, 0x01	; 1
+     878:	10 e0       	ldi	r17, 0x00	; 0
+	}
+}
+
+void testeCoffe(unsigned int sub){
+	while(quantCoffe < 0){
+		quantCoffe += sub;
+     87a:	8c 0f       	add	r24, r28
+     87c:	9d 1f       	adc	r25, r29
+     87e:	90 93 07 01 	sts	0x0107, r25	; 0x800107 <quantCoffe+0x1>
+     882:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <quantCoffe>
+		colocarCafeMaquina();
+     886:	0e 94 de 03 	call	0x7bc	; 0x7bc <colocarCafeMaquina>
+		int total = quantCoffe + cafeColocar - sub;
+     88a:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <quantCoffe>
+     88e:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <quantCoffe+0x1>
+     892:	20 91 08 01 	lds	r18, 0x0108	; 0x800108 <cafeColocar>
+     896:	30 91 09 01 	lds	r19, 0x0109	; 0x800109 <cafeColocar+0x1>
+		if (total >= 0){
+     89a:	ac 01       	movw	r20, r24
+     89c:	42 0f       	add	r20, r18
+     89e:	53 1f       	adc	r21, r19
+     8a0:	4c 1b       	sub	r20, r28
+     8a2:	5d 0b       	sbc	r21, r29
+     8a4:	4a f0       	brmi	.+18     	; 0x8b8 <testeCoffe+0x58>
+			quantCoffe -= sub;
+			quantCoffe += cafeColocar;
+     8a6:	8c 1b       	sub	r24, r28
+     8a8:	9d 0b       	sbc	r25, r29
+     8aa:	82 0f       	add	r24, r18
+     8ac:	93 1f       	adc	r25, r19
+     8ae:	90 93 07 01 	sts	0x0107, r25	; 0x800107 <quantCoffe+0x1>
+     8b2:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <quantCoffe>
+     8b6:	0a c0       	rjmp	.+20     	; 0x8cc <testeCoffe+0x6c>
+		}
+		else {
+			quantCoffe -= sub;
+     8b8:	8c 1b       	sub	r24, r28
+     8ba:	9d 0b       	sbc	r25, r29
+     8bc:	90 93 07 01 	sts	0x0107, r25	; 0x800107 <quantCoffe+0x1>
+     8c0:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <quantCoffe>
+			cafeColocar = 1;
+     8c4:	10 93 09 01 	sts	0x0109, r17	; 0x800109 <cafeColocar+0x1>
+     8c8:	00 93 08 01 	sts	0x0108, r16	; 0x800108 <cafeColocar>
+		}
+		debbug(sub);
+     8cc:	ce 01       	movw	r24, r28
+     8ce:	0e 94 02 04 	call	0x804	; 0x804 <debbug>
+		_delay_ms(500); // tempo para n crashar
+	}
+}
+
+void testeCoffe(unsigned int sub){
+	while(quantCoffe < 0){
+     8d2:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <quantCoffe>
+     8d6:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <quantCoffe+0x1>
+     8da:	99 23       	and	r25, r25
+     8dc:	74 f2       	brlt	.-100    	; 0x87a <testeCoffe+0x1a>
+			quantCoffe -= sub;
+			cafeColocar = 1;
+		}
+		debbug(sub);
+	}
+	debbug(sub);
+     8de:	ce 01       	movw	r24, r28
+     8e0:	0e 94 02 04 	call	0x804	; 0x804 <debbug>
+}
+     8e4:	df 91       	pop	r29
+     8e6:	cf 91       	pop	r28
+     8e8:	1f 91       	pop	r17
+     8ea:	0f 91       	pop	r16
+     8ec:	08 95       	ret
+
+000008ee <sucessoCafe>:
+	escreve_LCD_Flash(msgDebbugCoffe2);
+	conversorNumeros(quantCoffe, 0xCB);
+	_delay_ms(2000);
+}
+
+void sucessoCafe(int copo){
+     8ee:	cf 93       	push	r28
+     8f0:	df 93       	push	r29
+     8f2:	ec 01       	movw	r28, r24
+	cmd_LCD(0x01,0); // limpa lcd
+     8f4:	60 e0       	ldi	r22, 0x00	; 0
+     8f6:	81 e0       	ldi	r24, 0x01	; 1
+     8f8:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80, 0);
+     8fc:	60 e0       	ldi	r22, 0x00	; 0
+     8fe:	80 e8       	ldi	r24, 0x80	; 128
+     900:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigSucefful);
+     904:	80 e5       	ldi	r24, 0x50	; 80
+     906:	91 e0       	ldi	r25, 0x01	; 1
+     908:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	cmd_LCD(0xC0, 0);
+     90c:	60 e0       	ldi	r22, 0x00	; 0
+     90e:	80 ec       	ldi	r24, 0xC0	; 192
+     910:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgConfigSucefful2);
+     914:	88 e4       	ldi	r24, 0x48	; 72
+     916:	91 e0       	ldi	r25, 0x01	; 1
+     918:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	conversorNumeros2(copo + 1, 0xC8);
+     91c:	68 ec       	ldi	r22, 0xC8	; 200
+     91e:	ce 01       	movw	r24, r28
+     920:	01 96       	adiw	r24, 0x01	; 1
+     922:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+     926:	2f ef       	ldi	r18, 0xFF	; 255
+     928:	8e e9       	ldi	r24, 0x9E	; 158
+     92a:	94 e2       	ldi	r25, 0x24	; 36
+     92c:	21 50       	subi	r18, 0x01	; 1
+     92e:	80 40       	sbci	r24, 0x00	; 0
+     930:	90 40       	sbci	r25, 0x00	; 0
+     932:	e1 f7       	brne	.-8      	; 0x92c <__stack+0x2d>
+     934:	00 c0       	rjmp	.+0      	; 0x936 <__stack+0x37>
+     936:	00 00       	nop
+	_delay_ms(750);
+}
+     938:	df 91       	pop	r29
+     93a:	cf 91       	pop	r28
+     93c:	08 95       	ret
+
+0000093e <copoPronto>:
+
+void copoPronto(){
+	cmd_LCD(0x01,0); // limpa lcd
+     93e:	60 e0       	ldi	r22, 0x00	; 0
+     940:	81 e0       	ldi	r24, 0x01	; 1
+     942:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80, 0);
+     946:	60 e0       	ldi	r22, 0x00	; 0
+     948:	80 e8       	ldi	r24, 0x80	; 128
+     94a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgAllReady);
+     94e:	87 eb       	ldi	r24, 0xB7	; 183
+     950:	90 e0       	ldi	r25, 0x00	; 0
+     952:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	cmd_LCD(0xC0, 0);
+     956:	60 e0       	ldi	r22, 0x00	; 0
+     958:	80 ec       	ldi	r24, 0xC0	; 192
+     95a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgAllReady2);
+     95e:	85 ea       	ldi	r24, 0xA5	; 165
+     960:	90 e0       	ldi	r25, 0x00	; 0
+     962:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+     966:	2f ef       	ldi	r18, 0xFF	; 255
+     968:	87 ea       	ldi	r24, 0xA7	; 167
+     96a:	91 e6       	ldi	r25, 0x61	; 97
+     96c:	21 50       	subi	r18, 0x01	; 1
+     96e:	80 40       	sbci	r24, 0x00	; 0
+     970:	90 40       	sbci	r25, 0x00	; 0
+     972:	e1 f7       	brne	.-8      	; 0x96c <copoPronto+0x2e>
+     974:	00 c0       	rjmp	.+0      	; 0x976 <copoPronto+0x38>
+     976:	00 00       	nop
+     978:	08 95       	ret
+
+0000097a <finalizar>:
+	_delay_ms(2000);
+}
+
+void finalizar(){
+     97a:	cf 93       	push	r28
+     97c:	df 93       	push	r29
+	cmd_LCD(0x01,0); // limpa lcd
+     97e:	60 e0       	ldi	r22, 0x00	; 0
+     980:	81 e0       	ldi	r24, 0x01	; 1
+     982:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     986:	c2 e3       	ldi	r28, 0x32	; 50
+     988:	d0 e0       	ldi	r29, 0x00	; 0
+	for (int i = 0; i < 50; i++){
+		cmd_LCD(0x80, 0);
+     98a:	60 e0       	ldi	r22, 0x00	; 0
+     98c:	80 e8       	ldi	r24, 0x80	; 128
+     98e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgFInalizado);
+     992:	85 e9       	ldi	r24, 0x95	; 149
+     994:	90 e0       	ldi	r25, 0x00	; 0
+     996:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		cmd_LCD(0xC0, 0);
+     99a:	60 e0       	ldi	r22, 0x00	; 0
+     99c:	80 ec       	ldi	r24, 0xC0	; 192
+     99e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgFInalizado1);
+     9a2:	87 e8       	ldi	r24, 0x87	; 135
+     9a4:	90 e0       	ldi	r25, 0x00	; 0
+     9a6:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		cmd_LCD(0x00, 1);
+     9aa:	61 e0       	ldi	r22, 0x01	; 1
+     9ac:	80 e0       	ldi	r24, 0x00	; 0
+     9ae:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		cmd_LCD(0x1C, 0); // move para a direita.
+     9b2:	60 e0       	ldi	r22, 0x00	; 0
+     9b4:	8c e1       	ldi	r24, 0x1C	; 28
+     9b6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     9ba:	2f ef       	ldi	r18, 0xFF	; 255
+     9bc:	82 e5       	ldi	r24, 0x52	; 82
+     9be:	97 e0       	ldi	r25, 0x07	; 7
+     9c0:	21 50       	subi	r18, 0x01	; 1
+     9c2:	80 40       	sbci	r24, 0x00	; 0
+     9c4:	90 40       	sbci	r25, 0x00	; 0
+     9c6:	e1 f7       	brne	.-8      	; 0x9c0 <finalizar+0x46>
+     9c8:	00 c0       	rjmp	.+0      	; 0x9ca <finalizar+0x50>
+     9ca:	00 00       	nop
+     9cc:	21 97       	sbiw	r28, 0x01	; 1
+	_delay_ms(2000);
+}
+
+void finalizar(){
+	cmd_LCD(0x01,0); // limpa lcd
+	for (int i = 0; i < 50; i++){
+     9ce:	e9 f6       	brne	.-70     	; 0x98a <finalizar+0x10>
+		escreve_LCD_Flash(msgFInalizado1);
+		cmd_LCD(0x00, 1);
+		cmd_LCD(0x1C, 0); // move para a direita.
+		_delay_ms(150);
+	}
+}
+     9d0:	df 91       	pop	r29
+     9d2:	cf 91       	pop	r28
+     9d4:	08 95       	ret
+
+000009d6 <Animation>:
+	escreve_LCD_Flash(msgActivityText);
+	conversorNumeros2(i + 1, 0xC8);
+	Animation(position, 150, 3);
+}
+
+void Animation(unsigned char position, int time, unsigned int repete){
+     9d6:	bf 92       	push	r11
+     9d8:	cf 92       	push	r12
+     9da:	df 92       	push	r13
+     9dc:	ef 92       	push	r14
+     9de:	ff 92       	push	r15
+     9e0:	0f 93       	push	r16
+     9e2:	1f 93       	push	r17
+     9e4:	cf 93       	push	r28
+     9e6:	df 93       	push	r29
+	for(int i = 0; i < repete; i++){
+     9e8:	41 15       	cp	r20, r1
+     9ea:	51 05       	cpc	r21, r1
+     9ec:	e9 f1       	breq	.+122    	; 0xa68 <Animation+0x92>
+     9ee:	eb 01       	movw	r28, r22
+     9f0:	f8 2e       	mov	r15, r24
+     9f2:	6a 01       	movw	r12, r20
+     9f4:	00 e0       	ldi	r16, 0x00	; 0
+     9f6:	10 e0       	ldi	r17, 0x00	; 0
+		cmd_LCD(position, 0);
+		cmd_LCD('.', 1);
+		my_delay_ms(time);
+		cmd_LCD(position + 1, 0);
+     9f8:	bb 24       	eor	r11, r11
+     9fa:	b3 94       	inc	r11
+     9fc:	b8 0e       	add	r11, r24
+		cmd_LCD('.', 1);
+		my_delay_ms(time);
+		cmd_LCD(position + 2, 0);
+     9fe:	68 94       	set
+     a00:	ee 24       	eor	r14, r14
+     a02:	e1 f8       	bld	r14, 1
+     a04:	e8 0e       	add	r14, r24
+	Animation(position, 150, 3);
+}
+
+void Animation(unsigned char position, int time, unsigned int repete){
+	for(int i = 0; i < repete; i++){
+		cmd_LCD(position, 0);
+     a06:	60 e0       	ldi	r22, 0x00	; 0
+     a08:	8f 2d       	mov	r24, r15
+     a0a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		cmd_LCD('.', 1);
+     a0e:	61 e0       	ldi	r22, 0x01	; 1
+     a10:	8e e2       	ldi	r24, 0x2E	; 46
+     a12:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		my_delay_ms(time);
+     a16:	ce 01       	movw	r24, r28
+     a18:	0e 94 a8 02 	call	0x550	; 0x550 <my_delay_ms>
+		cmd_LCD(position + 1, 0);
+     a1c:	60 e0       	ldi	r22, 0x00	; 0
+     a1e:	8b 2d       	mov	r24, r11
+     a20:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		cmd_LCD('.', 1);
+     a24:	61 e0       	ldi	r22, 0x01	; 1
+     a26:	8e e2       	ldi	r24, 0x2E	; 46
+     a28:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		my_delay_ms(time);
+     a2c:	ce 01       	movw	r24, r28
+     a2e:	0e 94 a8 02 	call	0x550	; 0x550 <my_delay_ms>
+		cmd_LCD(position + 2, 0);
+     a32:	60 e0       	ldi	r22, 0x00	; 0
+     a34:	8e 2d       	mov	r24, r14
+     a36:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		cmd_LCD('.', 1);
+     a3a:	61 e0       	ldi	r22, 0x01	; 1
+     a3c:	8e e2       	ldi	r24, 0x2E	; 46
+     a3e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		my_delay_ms(time);
+     a42:	ce 01       	movw	r24, r28
+     a44:	0e 94 a8 02 	call	0x550	; 0x550 <my_delay_ms>
+		cmd_LCD(position, 0);
+     a48:	60 e0       	ldi	r22, 0x00	; 0
+     a4a:	8f 2d       	mov	r24, r15
+     a4c:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(nadaAnimation);
+     a50:	89 e2       	ldi	r24, 0x29	; 41
+     a52:	92 e0       	ldi	r25, 0x02	; 2
+     a54:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		my_delay_ms(time);
+     a58:	ce 01       	movw	r24, r28
+     a5a:	0e 94 a8 02 	call	0x550	; 0x550 <my_delay_ms>
+	conversorNumeros2(i + 1, 0xC8);
+	Animation(position, 150, 3);
+}
+
+void Animation(unsigned char position, int time, unsigned int repete){
+	for(int i = 0; i < repete; i++){
+     a5e:	0f 5f       	subi	r16, 0xFF	; 255
+     a60:	1f 4f       	sbci	r17, 0xFF	; 255
+     a62:	0c 15       	cp	r16, r12
+     a64:	1d 05       	cpc	r17, r13
+     a66:	79 f6       	brne	.-98     	; 0xa06 <Animation+0x30>
+		my_delay_ms(time);
+		cmd_LCD(position, 0);
+		escreve_LCD_Flash(nadaAnimation);
+		my_delay_ms(time);
+	}
+}
+     a68:	df 91       	pop	r29
+     a6a:	cf 91       	pop	r28
+     a6c:	1f 91       	pop	r17
+     a6e:	0f 91       	pop	r16
+     a70:	ff 90       	pop	r15
+     a72:	ef 90       	pop	r14
+     a74:	df 90       	pop	r13
+     a76:	cf 90       	pop	r12
+     a78:	bf 90       	pop	r11
+     a7a:	08 95       	ret
+
+00000a7c <presence>:
+	if(quantCopo == 1){
+		typeCopo[1] = 0;
+	}
+}
+
+void presence(const char *c){
+     a7c:	0f 93       	push	r16
+     a7e:	1f 93       	push	r17
+     a80:	cf 93       	push	r28
+     a82:	df 93       	push	r29
+	for(int i = 0; i < quantCopo; ++i){
+     a84:	20 91 04 01 	lds	r18, 0x0104	; 0x800104 <quantCopo>
+     a88:	30 91 05 01 	lds	r19, 0x0105	; 0x800105 <quantCopo+0x1>
+     a8c:	12 16       	cp	r1, r18
+     a8e:	13 06       	cpc	r1, r19
+     a90:	0c f0       	brlt	.+2      	; 0xa94 <presence+0x18>
+     a92:	54 c0       	rjmp	.+168    	; 0xb3c <presence+0xc0>
+     a94:	8c 01       	movw	r16, r24
+     a96:	c0 e0       	ldi	r28, 0x00	; 0
+     a98:	d0 e0       	ldi	r29, 0x00	; 0
+		cmd_LCD(0x01,0); // limpa lcd
+     a9a:	60 e0       	ldi	r22, 0x00	; 0
+     a9c:	81 e0       	ldi	r24, 0x01	; 1
+     a9e:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		cmd_LCD(0x80, 0);
+     aa2:	60 e0       	ldi	r22, 0x00	; 0
+     aa4:	80 e8       	ldi	r24, 0x80	; 128
+     aa6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgPresence);
+     aaa:	81 e0       	ldi	r24, 0x01	; 1
+     aac:	92 e0       	ldi	r25, 0x02	; 2
+     aae:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		escreve_LCD_Flash(c);
+     ab2:	c8 01       	movw	r24, r16
+     ab4:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		cmd_LCD(0xC0, 0);
+     ab8:	60 e0       	ldi	r22, 0x00	; 0
+     aba:	80 ec       	ldi	r24, 0xC0	; 192
+     abc:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgPresenceCopText);
+     ac0:	8d ec       	ldi	r24, 0xCD	; 205
+     ac2:	91 e0       	ldi	r25, 0x01	; 1
+     ac4:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		conversorNumeros2(i + 1, 0xC8);
+     ac8:	21 96       	adiw	r28, 0x01	; 1
+     aca:	68 ec       	ldi	r22, 0xC8	; 200
+     acc:	ce 01       	movw	r24, r28
+     ace:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+		while(tst_bit(PINC, PRESENCE)){
+     ad2:	34 9b       	sbis	0x06, 4	; 6
+     ad4:	09 c0       	rjmp	.+18     	; 0xae8 <presence+0x6c>
+			Animation(0xC9, 75, 1);
+     ad6:	41 e0       	ldi	r20, 0x01	; 1
+     ad8:	50 e0       	ldi	r21, 0x00	; 0
+     ada:	6b e4       	ldi	r22, 0x4B	; 75
+     adc:	70 e0       	ldi	r23, 0x00	; 0
+     ade:	89 ec       	ldi	r24, 0xC9	; 201
+     ae0:	0e 94 eb 04 	call	0x9d6	; 0x9d6 <Animation>
+		escreve_LCD_Flash(msgPresence);
+		escreve_LCD_Flash(c);
+		cmd_LCD(0xC0, 0);
+		escreve_LCD_Flash(msgPresenceCopText);
+		conversorNumeros2(i + 1, 0xC8);
+		while(tst_bit(PINC, PRESENCE)){
+     ae4:	34 99       	sbic	0x06, 4	; 6
+     ae6:	f7 cf       	rjmp	.-18     	; 0xad6 <presence+0x5a>
+			Animation(0xC9, 75, 1);
+		}
+		cmd_LCD(0x01,0); // limpa lcd
+     ae8:	60 e0       	ldi	r22, 0x00	; 0
+     aea:	81 e0       	ldi	r24, 0x01	; 1
+     aec:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgPresenceStatus);
+     af0:	8b ef       	ldi	r24, 0xFB	; 251
+     af2:	91 e0       	ldi	r25, 0x01	; 1
+     af4:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		conversorNumeros2(i + 1, 0x85);
+     af8:	65 e8       	ldi	r22, 0x85	; 133
+     afa:	ce 01       	movw	r24, r28
+     afc:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+		if(c == msgPresenceEnt){
+     b00:	21 e0       	ldi	r18, 0x01	; 1
+     b02:	0f 3d       	cpi	r16, 0xDF	; 223
+     b04:	12 07       	cpc	r17, r18
+     b06:	29 f4       	brne	.+10     	; 0xb12 <presence+0x96>
+			escreve_LCD_Flash(msgPresenceStatusEnt);
+     b08:	81 ef       	ldi	r24, 0xF1	; 241
+     b0a:	91 e0       	ldi	r25, 0x01	; 1
+     b0c:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+     b10:	04 c0       	rjmp	.+8      	; 0xb1a <presence+0x9e>
+		}
+		else{
+			escreve_LCD_Flash(msgPresenceStatusRet);
+     b12:	87 ee       	ldi	r24, 0xE7	; 231
+     b14:	91 e0       	ldi	r25, 0x01	; 1
+     b16:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+     b1a:	8f ef       	ldi	r24, 0xFF	; 255
+     b1c:	9d e3       	ldi	r25, 0x3D	; 61
+     b1e:	29 e4       	ldi	r18, 0x49	; 73
+     b20:	81 50       	subi	r24, 0x01	; 1
+     b22:	90 40       	sbci	r25, 0x00	; 0
+     b24:	20 40       	sbci	r18, 0x00	; 0
+     b26:	e1 f7       	brne	.-8      	; 0xb20 <presence+0xa4>
+     b28:	00 c0       	rjmp	.+0      	; 0xb2a <presence+0xae>
+     b2a:	00 00       	nop
+		typeCopo[1] = 0;
+	}
+}
+
+void presence(const char *c){
+	for(int i = 0; i < quantCopo; ++i){
+     b2c:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     b30:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     b34:	c8 17       	cp	r28, r24
+     b36:	d9 07       	cpc	r29, r25
+     b38:	0c f4       	brge	.+2      	; 0xb3c <presence+0xc0>
+     b3a:	af cf       	rjmp	.-162    	; 0xa9a <presence+0x1e>
+		else{
+			escreve_LCD_Flash(msgPresenceStatusRet);
+		}
+		_delay_ms(1500); // tempo para n crashar
+	}
+}
+     b3c:	df 91       	pop	r29
+     b3e:	cf 91       	pop	r28
+     b40:	1f 91       	pop	r17
+     b42:	0f 91       	pop	r16
+     b44:	08 95       	ret
+
+00000b46 <Activity>:
+		cmd_LCD(0x1C, 0); // move para a direita.
+		_delay_ms(150);
+	}
+}
+
+void Activity(const char *c, int i, unsigned char position){
+     b46:	ef 92       	push	r14
+     b48:	ff 92       	push	r15
+     b4a:	0f 93       	push	r16
+     b4c:	1f 93       	push	r17
+     b4e:	cf 93       	push	r28
+     b50:	7c 01       	movw	r14, r24
+     b52:	8b 01       	movw	r16, r22
+     b54:	c4 2f       	mov	r28, r20
+	cmd_LCD(0x01,0); // limpa lcd
+     b56:	60 e0       	ldi	r22, 0x00	; 0
+     b58:	81 e0       	ldi	r24, 0x01	; 1
+     b5a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80, 0);
+     b5e:	60 e0       	ldi	r22, 0x00	; 0
+     b60:	80 e8       	ldi	r24, 0x80	; 128
+     b62:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgActivity);
+     b66:	8b ee       	ldi	r24, 0xEB	; 235
+     b68:	90 e0       	ldi	r25, 0x00	; 0
+     b6a:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	escreve_LCD_Flash(c);
+     b6e:	c7 01       	movw	r24, r14
+     b70:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	cmd_LCD(0xC0, 0);
+     b74:	60 e0       	ldi	r22, 0x00	; 0
+     b76:	80 ec       	ldi	r24, 0xC0	; 192
+     b78:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	escreve_LCD_Flash(msgActivityText);
+     b7c:	86 ec       	ldi	r24, 0xC6	; 198
+     b7e:	90 e0       	ldi	r25, 0x00	; 0
+     b80:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+	conversorNumeros2(i + 1, 0xC8);
+     b84:	68 ec       	ldi	r22, 0xC8	; 200
+     b86:	c8 01       	movw	r24, r16
+     b88:	01 96       	adiw	r24, 0x01	; 1
+     b8a:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+	Animation(position, 150, 3);
+     b8e:	43 e0       	ldi	r20, 0x03	; 3
+     b90:	50 e0       	ldi	r21, 0x00	; 0
+     b92:	66 e9       	ldi	r22, 0x96	; 150
+     b94:	70 e0       	ldi	r23, 0x00	; 0
+     b96:	8c 2f       	mov	r24, r28
+     b98:	0e 94 eb 04 	call	0x9d6	; 0x9d6 <Animation>
+}
+     b9c:	cf 91       	pop	r28
+     b9e:	1f 91       	pop	r17
+     ba0:	0f 91       	pop	r16
+     ba2:	ff 90       	pop	r15
+     ba4:	ef 90       	pop	r14
+     ba6:	08 95       	ret
+
+00000ba8 <consumirCafeMaquina>:
+		}
+		_delay_ms(1500); // tempo para n crashar
+	}
+}
+
+void consumirCafeMaquina(){
+     ba8:	0f 93       	push	r16
+     baa:	1f 93       	push	r17
+     bac:	cf 93       	push	r28
+     bae:	df 93       	push	r29
+     bb0:	2f ef       	ldi	r18, 0xFF	; 255
+     bb2:	81 ee       	ldi	r24, 0xE1	; 225
+     bb4:	94 e0       	ldi	r25, 0x04	; 4
+     bb6:	21 50       	subi	r18, 0x01	; 1
+     bb8:	80 40       	sbci	r24, 0x00	; 0
+     bba:	90 40       	sbci	r25, 0x00	; 0
+     bbc:	e1 f7       	brne	.-8      	; 0xbb6 <consumirCafeMaquina+0xe>
+     bbe:	00 c0       	rjmp	.+0      	; 0xbc0 <consumirCafeMaquina+0x18>
+     bc0:	00 00       	nop
+	_delay_ms(100);
+	for(int i = 0; i < quantCopo; ++i){
+     bc2:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     bc6:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     bca:	18 16       	cp	r1, r24
+     bcc:	19 06       	cpc	r1, r25
+     bce:	0c f0       	brlt	.+2      	; 0xbd2 <consumirCafeMaquina+0x2a>
+     bd0:	69 c0       	rjmp	.+210    	; 0xca4 <consumirCafeMaquina+0xfc>
+     bd2:	00 e0       	ldi	r16, 0x00	; 0
+     bd4:	11 e0       	ldi	r17, 0x01	; 1
+     bd6:	c0 e0       	ldi	r28, 0x00	; 0
+     bd8:	d0 e0       	ldi	r29, 0x00	; 0
+		if(typeCopo[i] != 0){
+     bda:	f8 01       	movw	r30, r16
+     bdc:	81 91       	ld	r24, Z+
+     bde:	91 91       	ld	r25, Z+
+     be0:	8f 01       	movw	r16, r30
+     be2:	00 97       	sbiw	r24, 0x00	; 0
+     be4:	09 f4       	brne	.+2      	; 0xbe8 <consumirCafeMaquina+0x40>
+     be6:	4c c0       	rjmp	.+152    	; 0xc80 <consumirCafeMaquina+0xd8>
+			if(typeCopo[i] == 1){
+     be8:	81 30       	cpi	r24, 0x01	; 1
+     bea:	91 05       	cpc	r25, r1
+     bec:	b9 f4       	brne	.+46     	; 0xc1c <consumirCafeMaquina+0x74>
+				quantCoffe -= 2;
+     bee:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <quantCoffe>
+     bf2:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <quantCoffe+0x1>
+     bf6:	02 97       	sbiw	r24, 0x02	; 2
+     bf8:	90 93 07 01 	sts	0x0107, r25	; 0x800107 <quantCoffe+0x1>
+     bfc:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <quantCoffe>
+				testeCoffe(2);
+     c00:	82 e0       	ldi	r24, 0x02	; 2
+     c02:	90 e0       	ldi	r25, 0x00	; 0
+     c04:	0e 94 30 04 	call	0x860	; 0x860 <testeCoffe>
+				Activity(msgActivityCafe, i, 0xC9);
+     c08:	49 ec       	ldi	r20, 0xC9	; 201
+     c0a:	be 01       	movw	r22, r28
+     c0c:	86 ee       	ldi	r24, 0xE6	; 230
+     c0e:	90 e0       	ldi	r25, 0x00	; 0
+     c10:	0e 94 a3 05 	call	0xb46	; 0xb46 <Activity>
+				sucessoCafe(i);
+     c14:	ce 01       	movw	r24, r28
+     c16:	0e 94 77 04 	call	0x8ee	; 0x8ee <sucessoCafe>
+     c1a:	32 c0       	rjmp	.+100    	; 0xc80 <consumirCafeMaquina+0xd8>
+			}
+			else if (typeCopo[i] == 2){
+     c1c:	82 30       	cpi	r24, 0x02	; 2
+     c1e:	91 05       	cpc	r25, r1
+     c20:	b9 f4       	brne	.+46     	; 0xc50 <consumirCafeMaquina+0xa8>
+				quantCoffe -= 3;
+     c22:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <quantCoffe>
+     c26:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <quantCoffe+0x1>
+     c2a:	03 97       	sbiw	r24, 0x03	; 3
+     c2c:	90 93 07 01 	sts	0x0107, r25	; 0x800107 <quantCoffe+0x1>
+     c30:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <quantCoffe>
+				testeCoffe(3);
+     c34:	83 e0       	ldi	r24, 0x03	; 3
+     c36:	90 e0       	ldi	r25, 0x00	; 0
+     c38:	0e 94 30 04 	call	0x860	; 0x860 <testeCoffe>
+				Activity(msgActivityCafe, i, 0xC9);
+     c3c:	49 ec       	ldi	r20, 0xC9	; 201
+     c3e:	be 01       	movw	r22, r28
+     c40:	86 ee       	ldi	r24, 0xE6	; 230
+     c42:	90 e0       	ldi	r25, 0x00	; 0
+     c44:	0e 94 a3 05 	call	0xb46	; 0xb46 <Activity>
+				sucessoCafe(i);
+     c48:	ce 01       	movw	r24, r28
+     c4a:	0e 94 77 04 	call	0x8ee	; 0x8ee <sucessoCafe>
+     c4e:	18 c0       	rjmp	.+48     	; 0xc80 <consumirCafeMaquina+0xd8>
+			}
+			else if (typeCopo[i] == 3){
+     c50:	03 97       	sbiw	r24, 0x03	; 3
+     c52:	b1 f4       	brne	.+44     	; 0xc80 <consumirCafeMaquina+0xd8>
+				quantCoffe -= 4;
+     c54:	80 91 06 01 	lds	r24, 0x0106	; 0x800106 <quantCoffe>
+     c58:	90 91 07 01 	lds	r25, 0x0107	; 0x800107 <quantCoffe+0x1>
+     c5c:	04 97       	sbiw	r24, 0x04	; 4
+     c5e:	90 93 07 01 	sts	0x0107, r25	; 0x800107 <quantCoffe+0x1>
+     c62:	80 93 06 01 	sts	0x0106, r24	; 0x800106 <quantCoffe>
+				testeCoffe(4);
+     c66:	84 e0       	ldi	r24, 0x04	; 4
+     c68:	90 e0       	ldi	r25, 0x00	; 0
+     c6a:	0e 94 30 04 	call	0x860	; 0x860 <testeCoffe>
+				Activity(msgActivityCafe, i, 0xC9);
+     c6e:	49 ec       	ldi	r20, 0xC9	; 201
+     c70:	be 01       	movw	r22, r28
+     c72:	86 ee       	ldi	r24, 0xE6	; 230
+     c74:	90 e0       	ldi	r25, 0x00	; 0
+     c76:	0e 94 a3 05 	call	0xb46	; 0xb46 <Activity>
+				sucessoCafe(i);
+     c7a:	ce 01       	movw	r24, r28
+     c7c:	0e 94 77 04 	call	0x8ee	; 0x8ee <sucessoCafe>
+     c80:	ff ef       	ldi	r31, 0xFF	; 255
+     c82:	29 e6       	ldi	r18, 0x69	; 105
+     c84:	88 e1       	ldi	r24, 0x18	; 24
+     c86:	f1 50       	subi	r31, 0x01	; 1
+     c88:	20 40       	sbci	r18, 0x00	; 0
+     c8a:	80 40       	sbci	r24, 0x00	; 0
+     c8c:	e1 f7       	brne	.-8      	; 0xc86 <consumirCafeMaquina+0xde>
+     c8e:	00 c0       	rjmp	.+0      	; 0xc90 <consumirCafeMaquina+0xe8>
+     c90:	00 00       	nop
+	}
+}
+
+void consumirCafeMaquina(){
+	_delay_ms(100);
+	for(int i = 0; i < quantCopo; ++i){
+     c92:	21 96       	adiw	r28, 0x01	; 1
+     c94:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     c98:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     c9c:	c8 17       	cp	r28, r24
+     c9e:	d9 07       	cpc	r29, r25
+     ca0:	0c f4       	brge	.+2      	; 0xca4 <consumirCafeMaquina+0xfc>
+     ca2:	9b cf       	rjmp	.-202    	; 0xbda <consumirCafeMaquina+0x32>
+				sucessoCafe(i);
+			}
+		}
+		_delay_ms(500);
+	}
+}
+     ca4:	df 91       	pop	r29
+     ca6:	cf 91       	pop	r28
+     ca8:	1f 91       	pop	r17
+     caa:	0f 91       	pop	r16
+     cac:	08 95       	ret
+
+00000cae <leiteConfig>:
+
+void leiteConfig(){
+     cae:	af 92       	push	r10
+     cb0:	bf 92       	push	r11
+     cb2:	cf 92       	push	r12
+     cb4:	df 92       	push	r13
+     cb6:	ef 92       	push	r14
+     cb8:	ff 92       	push	r15
+     cba:	0f 93       	push	r16
+     cbc:	1f 93       	push	r17
+     cbe:	cf 93       	push	r28
+     cc0:	df 93       	push	r29
+	cmd_LCD(0x01,0); // limpa lcd
+     cc2:	60 e0       	ldi	r22, 0x00	; 0
+     cc4:	81 e0       	ldi	r24, 0x01	; 1
+     cc6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	for(int i = 0; i < quantCopo; ++i){
+     cca:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     cce:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     cd2:	18 16       	cp	r1, r24
+     cd4:	19 06       	cpc	r1, r25
+     cd6:	0c f0       	brlt	.+2      	; 0xcda <leiteConfig+0x2c>
+     cd8:	47 c0       	rjmp	.+142    	; 0xd68 <leiteConfig+0xba>
+     cda:	c6 e1       	ldi	r28, 0x16	; 22
+     cdc:	d1 e0       	ldi	r29, 0x01	; 1
+     cde:	c1 2c       	mov	r12, r1
+     ce0:	d1 2c       	mov	r13, r1
+		cmd_LCD(0x80, 0);
+     ce2:	60 e0       	ldi	r22, 0x00	; 0
+     ce4:	80 e8       	ldi	r24, 0x80	; 128
+     ce6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgConfigLeite);
+     cea:	82 e2       	ldi	r24, 0x22	; 34
+     cec:	91 e0       	ldi	r25, 0x01	; 1
+     cee:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		conversorNumeros2(i + 1, 0x8E);
+     cf2:	56 01       	movw	r10, r12
+     cf4:	2f ef       	ldi	r18, 0xFF	; 255
+     cf6:	a2 1a       	sub	r10, r18
+     cf8:	b2 0a       	sbc	r11, r18
+     cfa:	6e e8       	ldi	r22, 0x8E	; 142
+     cfc:	c5 01       	movw	r24, r10
+     cfe:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+		cmd_LCD(0xC0, 0);
+     d02:	60 e0       	ldi	r22, 0x00	; 0
+     d04:	80 ec       	ldi	r24, 0xC0	; 192
+     d06:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgResp);
+     d0a:	86 ef       	ldi	r24, 0xF6	; 246
+     d0c:	90 e0       	ldi	r25, 0x00	; 0
+     d0e:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		configQuantSystem2(0, 1, &(leiteBool[i]), 0xC0, respYesOrNo);
+     d12:	0d e7       	ldi	r16, 0x7D	; 125
+     d14:	12 e0       	ldi	r17, 0x02	; 2
+     d16:	20 ec       	ldi	r18, 0xC0	; 192
+     d18:	ae 01       	movw	r20, r28
+     d1a:	61 e0       	ldi	r22, 0x01	; 1
+     d1c:	70 e0       	ldi	r23, 0x00	; 0
+     d1e:	80 e0       	ldi	r24, 0x00	; 0
+     d20:	90 e0       	ldi	r25, 0x00	; 0
+     d22:	0e 94 ea 02 	call	0x5d4	; 0x5d4 <configQuantSystem2>
+		cmd_LCD(0x01,0); // limpa lcd
+     d26:	60 e0       	ldi	r22, 0x00	; 0
+     d28:	81 e0       	ldi	r24, 0x01	; 1
+     d2a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		if (leiteBool[i] == 0){
+     d2e:	88 81       	ld	r24, Y
+     d30:	99 81       	ldd	r25, Y+1	; 0x01
+     d32:	22 96       	adiw	r28, 0x02	; 2
+     d34:	89 2b       	or	r24, r25
+     d36:	31 f4       	brne	.+12     	; 0xd44 <leiteConfig+0x96>
+			Activity(msgActivityLeie, i, 0xC9);
+     d38:	49 ec       	ldi	r20, 0xC9	; 201
+     d3a:	b6 01       	movw	r22, r12
+     d3c:	80 ee       	ldi	r24, 0xE0	; 224
+     d3e:	90 e0       	ldi	r25, 0x00	; 0
+     d40:	0e 94 a3 05 	call	0xb46	; 0xb46 <Activity>
+     d44:	8f ef       	ldi	r24, 0xFF	; 255
+     d46:	99 e6       	ldi	r25, 0x69	; 105
+     d48:	28 e1       	ldi	r18, 0x18	; 24
+     d4a:	81 50       	subi	r24, 0x01	; 1
+     d4c:	90 40       	sbci	r25, 0x00	; 0
+     d4e:	20 40       	sbci	r18, 0x00	; 0
+     d50:	e1 f7       	brne	.-8      	; 0xd4a <leiteConfig+0x9c>
+     d52:	00 c0       	rjmp	.+0      	; 0xd54 <leiteConfig+0xa6>
+     d54:	00 00       	nop
+	}
+}
+
+void leiteConfig(){
+	cmd_LCD(0x01,0); // limpa lcd
+	for(int i = 0; i < quantCopo; ++i){
+     d56:	65 01       	movw	r12, r10
+     d58:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     d5c:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     d60:	a8 16       	cp	r10, r24
+     d62:	b9 06       	cpc	r11, r25
+     d64:	0c f4       	brge	.+2      	; 0xd68 <leiteConfig+0xba>
+     d66:	bd cf       	rjmp	.-134    	; 0xce2 <leiteConfig+0x34>
+		if (leiteBool[i] == 0){
+			Activity(msgActivityLeie, i, 0xC9);
+		}
+		_delay_ms(500); // tempo para n crashar
+	}
+}
+     d68:	df 91       	pop	r29
+     d6a:	cf 91       	pop	r28
+     d6c:	1f 91       	pop	r17
+     d6e:	0f 91       	pop	r16
+     d70:	ff 90       	pop	r15
+     d72:	ef 90       	pop	r14
+     d74:	df 90       	pop	r13
+     d76:	cf 90       	pop	r12
+     d78:	bf 90       	pop	r11
+     d7a:	af 90       	pop	r10
+     d7c:	08 95       	ret
+
+00000d7e <acucarConfig>:
+
+void acucarConfig(){
+     d7e:	af 92       	push	r10
+     d80:	bf 92       	push	r11
+     d82:	cf 92       	push	r12
+     d84:	df 92       	push	r13
+     d86:	ef 92       	push	r14
+     d88:	ff 92       	push	r15
+     d8a:	0f 93       	push	r16
+     d8c:	1f 93       	push	r17
+     d8e:	cf 93       	push	r28
+     d90:	df 93       	push	r29
+	cmd_LCD(0x01,0); // limpa lcd
+     d92:	60 e0       	ldi	r22, 0x00	; 0
+     d94:	81 e0       	ldi	r24, 0x01	; 1
+     d96:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	for(int i = 0; i < quantCopo; ++i){
+     d9a:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     d9e:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     da2:	18 16       	cp	r1, r24
+     da4:	19 06       	cpc	r1, r25
+     da6:	0c f0       	brlt	.+2      	; 0xdaa <acucarConfig+0x2c>
+     da8:	47 c0       	rjmp	.+142    	; 0xe38 <acucarConfig+0xba>
+     daa:	c2 e1       	ldi	r28, 0x12	; 18
+     dac:	d1 e0       	ldi	r29, 0x01	; 1
+     dae:	c1 2c       	mov	r12, r1
+     db0:	d1 2c       	mov	r13, r1
+		cmd_LCD(0x80, 0);
+     db2:	60 e0       	ldi	r22, 0x00	; 0
+     db4:	80 e8       	ldi	r24, 0x80	; 128
+     db6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgConfigAcucar);
+     dba:	82 e1       	ldi	r24, 0x12	; 18
+     dbc:	91 e0       	ldi	r25, 0x01	; 1
+     dbe:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		conversorNumeros2(i + 1, 0x8F);
+     dc2:	56 01       	movw	r10, r12
+     dc4:	2f ef       	ldi	r18, 0xFF	; 255
+     dc6:	a2 1a       	sub	r10, r18
+     dc8:	b2 0a       	sbc	r11, r18
+     dca:	6f e8       	ldi	r22, 0x8F	; 143
+     dcc:	c5 01       	movw	r24, r10
+     dce:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+		cmd_LCD(0xC0, 0);
+     dd2:	60 e0       	ldi	r22, 0x00	; 0
+     dd4:	80 ec       	ldi	r24, 0xC0	; 192
+     dd6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgResp);
+     dda:	86 ef       	ldi	r24, 0xF6	; 246
+     ddc:	90 e0       	ldi	r25, 0x00	; 0
+     dde:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		configQuantSystem2(0, 1, &(acucarBool[i]), 0xC0, respYesOrNo);
+     de2:	0d e7       	ldi	r16, 0x7D	; 125
+     de4:	12 e0       	ldi	r17, 0x02	; 2
+     de6:	20 ec       	ldi	r18, 0xC0	; 192
+     de8:	ae 01       	movw	r20, r28
+     dea:	61 e0       	ldi	r22, 0x01	; 1
+     dec:	70 e0       	ldi	r23, 0x00	; 0
+     dee:	80 e0       	ldi	r24, 0x00	; 0
+     df0:	90 e0       	ldi	r25, 0x00	; 0
+     df2:	0e 94 ea 02 	call	0x5d4	; 0x5d4 <configQuantSystem2>
+		cmd_LCD(0x01,0); // limpa lcd
+     df6:	60 e0       	ldi	r22, 0x00	; 0
+     df8:	81 e0       	ldi	r24, 0x01	; 1
+     dfa:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		if (acucarBool[i] == 0){
+     dfe:	88 81       	ld	r24, Y
+     e00:	99 81       	ldd	r25, Y+1	; 0x01
+     e02:	22 96       	adiw	r28, 0x02	; 2
+     e04:	89 2b       	or	r24, r25
+     e06:	31 f4       	brne	.+12     	; 0xe14 <acucarConfig+0x96>
+			Activity(msgActivityAcucar, i, 0xC9);
+     e08:	49 ec       	ldi	r20, 0xC9	; 201
+     e0a:	b6 01       	movw	r22, r12
+     e0c:	89 ed       	ldi	r24, 0xD9	; 217
+     e0e:	90 e0       	ldi	r25, 0x00	; 0
+     e10:	0e 94 a3 05 	call	0xb46	; 0xb46 <Activity>
+     e14:	8f ef       	ldi	r24, 0xFF	; 255
+     e16:	99 e6       	ldi	r25, 0x69	; 105
+     e18:	28 e1       	ldi	r18, 0x18	; 24
+     e1a:	81 50       	subi	r24, 0x01	; 1
+     e1c:	90 40       	sbci	r25, 0x00	; 0
+     e1e:	20 40       	sbci	r18, 0x00	; 0
+     e20:	e1 f7       	brne	.-8      	; 0xe1a <acucarConfig+0x9c>
+     e22:	00 c0       	rjmp	.+0      	; 0xe24 <acucarConfig+0xa6>
+     e24:	00 00       	nop
+	}
+}
+
+void acucarConfig(){
+	cmd_LCD(0x01,0); // limpa lcd
+	for(int i = 0; i < quantCopo; ++i){
+     e26:	65 01       	movw	r12, r10
+     e28:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     e2c:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     e30:	a8 16       	cp	r10, r24
+     e32:	b9 06       	cpc	r11, r25
+     e34:	0c f4       	brge	.+2      	; 0xe38 <acucarConfig+0xba>
+     e36:	bd cf       	rjmp	.-134    	; 0xdb2 <acucarConfig+0x34>
+		if (acucarBool[i] == 0){
+			Activity(msgActivityAcucar, i, 0xC9);
+		}
+		_delay_ms(500); // tempo para n crashar
+	}
+}
+     e38:	df 91       	pop	r29
+     e3a:	cf 91       	pop	r28
+     e3c:	1f 91       	pop	r17
+     e3e:	0f 91       	pop	r16
+     e40:	ff 90       	pop	r15
+     e42:	ef 90       	pop	r14
+     e44:	df 90       	pop	r13
+     e46:	cf 90       	pop	r12
+     e48:	bf 90       	pop	r11
+     e4a:	af 90       	pop	r10
+     e4c:	08 95       	ret
+
+00000e4e <chocolateConfig>:
+
+void chocolateConfig(){
+     e4e:	af 92       	push	r10
+     e50:	bf 92       	push	r11
+     e52:	cf 92       	push	r12
+     e54:	df 92       	push	r13
+     e56:	ef 92       	push	r14
+     e58:	ff 92       	push	r15
+     e5a:	0f 93       	push	r16
+     e5c:	1f 93       	push	r17
+     e5e:	cf 93       	push	r28
+     e60:	df 93       	push	r29
+	cmd_LCD(0x01,0); // limpa lcd
+     e62:	60 e0       	ldi	r22, 0x00	; 0
+     e64:	81 e0       	ldi	r24, 0x01	; 1
+     e66:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	for(int i = 0; i < quantCopo; ++i){
+     e6a:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     e6e:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     e72:	18 16       	cp	r1, r24
+     e74:	19 06       	cpc	r1, r25
+     e76:	0c f0       	brlt	.+2      	; 0xe7a <chocolateConfig+0x2c>
+     e78:	47 c0       	rjmp	.+142    	; 0xf08 <chocolateConfig+0xba>
+     e7a:	ce e0       	ldi	r28, 0x0E	; 14
+     e7c:	d1 e0       	ldi	r29, 0x01	; 1
+     e7e:	c1 2c       	mov	r12, r1
+     e80:	d1 2c       	mov	r13, r1
+		cmd_LCD(0x80, 0);
+     e82:	60 e0       	ldi	r22, 0x00	; 0
+     e84:	80 e8       	ldi	r24, 0x80	; 128
+     e86:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgConfigChocolate);
+     e8a:	82 e0       	ldi	r24, 0x02	; 2
+     e8c:	91 e0       	ldi	r25, 0x01	; 1
+     e8e:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		conversorNumeros2(i + 1, 0x8F);
+     e92:	56 01       	movw	r10, r12
+     e94:	2f ef       	ldi	r18, 0xFF	; 255
+     e96:	a2 1a       	sub	r10, r18
+     e98:	b2 0a       	sbc	r11, r18
+     e9a:	6f e8       	ldi	r22, 0x8F	; 143
+     e9c:	c5 01       	movw	r24, r10
+     e9e:	0e 94 e9 01 	call	0x3d2	; 0x3d2 <conversorNumeros2>
+		cmd_LCD(0xC0, 0);
+     ea2:	60 e0       	ldi	r22, 0x00	; 0
+     ea4:	80 ec       	ldi	r24, 0xC0	; 192
+     ea6:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		escreve_LCD_Flash(msgResp);
+     eaa:	86 ef       	ldi	r24, 0xF6	; 246
+     eac:	90 e0       	ldi	r25, 0x00	; 0
+     eae:	0e 94 d5 01 	call	0x3aa	; 0x3aa <escreve_LCD_Flash>
+		configQuantSystem2(0, 1, &(chocolateBool[i]), 0xC0, respYesOrNo);
+     eb2:	0d e7       	ldi	r16, 0x7D	; 125
+     eb4:	12 e0       	ldi	r17, 0x02	; 2
+     eb6:	20 ec       	ldi	r18, 0xC0	; 192
+     eb8:	ae 01       	movw	r20, r28
+     eba:	61 e0       	ldi	r22, 0x01	; 1
+     ebc:	70 e0       	ldi	r23, 0x00	; 0
+     ebe:	80 e0       	ldi	r24, 0x00	; 0
+     ec0:	90 e0       	ldi	r25, 0x00	; 0
+     ec2:	0e 94 ea 02 	call	0x5d4	; 0x5d4 <configQuantSystem2>
+		cmd_LCD(0x01,0); // limpa lcd
+     ec6:	60 e0       	ldi	r22, 0x00	; 0
+     ec8:	81 e0       	ldi	r24, 0x01	; 1
+     eca:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+		if (chocolateBool[i] == 0){
+     ece:	88 81       	ld	r24, Y
+     ed0:	99 81       	ldd	r25, Y+1	; 0x01
+     ed2:	22 96       	adiw	r28, 0x02	; 2
+     ed4:	89 2b       	or	r24, r25
+     ed6:	31 f4       	brne	.+12     	; 0xee4 <chocolateConfig+0x96>
+			Activity(msgActivityChocolate, i, 0xC9);
+     ed8:	49 ec       	ldi	r20, 0xC9	; 201
+     eda:	b6 01       	movw	r22, r12
+     edc:	8f ec       	ldi	r24, 0xCF	; 207
+     ede:	90 e0       	ldi	r25, 0x00	; 0
+     ee0:	0e 94 a3 05 	call	0xb46	; 0xb46 <Activity>
+     ee4:	8f ef       	ldi	r24, 0xFF	; 255
+     ee6:	99 e6       	ldi	r25, 0x69	; 105
+     ee8:	28 e1       	ldi	r18, 0x18	; 24
+     eea:	81 50       	subi	r24, 0x01	; 1
+     eec:	90 40       	sbci	r25, 0x00	; 0
+     eee:	20 40       	sbci	r18, 0x00	; 0
+     ef0:	e1 f7       	brne	.-8      	; 0xeea <chocolateConfig+0x9c>
+     ef2:	00 c0       	rjmp	.+0      	; 0xef4 <chocolateConfig+0xa6>
+     ef4:	00 00       	nop
+	}
+}
+
+void chocolateConfig(){
+	cmd_LCD(0x01,0); // limpa lcd
+	for(int i = 0; i < quantCopo; ++i){
+     ef6:	65 01       	movw	r12, r10
+     ef8:	80 91 04 01 	lds	r24, 0x0104	; 0x800104 <quantCopo>
+     efc:	90 91 05 01 	lds	r25, 0x0105	; 0x800105 <quantCopo+0x1>
+     f00:	a8 16       	cp	r10, r24
+     f02:	b9 06       	cpc	r11, r25
+     f04:	0c f4       	brge	.+2      	; 0xf08 <chocolateConfig+0xba>
+     f06:	bd cf       	rjmp	.-134    	; 0xe82 <chocolateConfig+0x34>
+		if (chocolateBool[i] == 0){
+			Activity(msgActivityChocolate, i, 0xC9);
+		}
+		_delay_ms(500); // tempo para n crashar
+	}
+}
+     f08:	df 91       	pop	r29
+     f0a:	cf 91       	pop	r28
+     f0c:	1f 91       	pop	r17
+     f0e:	0f 91       	pop	r16
+     f10:	ff 90       	pop	r15
+     f12:	ef 90       	pop	r14
+     f14:	df 90       	pop	r13
+     f16:	cf 90       	pop	r12
+     f18:	bf 90       	pop	r11
+     f1a:	af 90       	pop	r10
+     f1c:	08 95       	ret
+
+00000f1e <mandaCaracterNovo>:
+		escreve_LCD_Flash(nadaAnimation);
+		my_delay_ms(time);
+	}
+}
+
+void mandaCaracterNovo(const unsigned char *text){
+     f1e:	0f 93       	push	r16
+     f20:	1f 93       	push	r17
+     f22:	cf 93       	push	r28
+     f24:	df 93       	push	r29
+     f26:	ec 01       	movw	r28, r24
+	cmd_LCD(0x40 + (count * 8), 0);				//endereço base para gravar novo segmento 0x40
+     f28:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <__data_end>
+     f2c:	90 91 0b 01 	lds	r25, 0x010B	; 0x80010b <__data_end+0x1>
+     f30:	08 96       	adiw	r24, 0x08	; 8
+     f32:	60 e0       	ldi	r22, 0x00	; 0
+     f34:	88 0f       	add	r24, r24
+     f36:	88 0f       	add	r24, r24
+     f38:	88 0f       	add	r24, r24
+     f3a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+     f3e:	8e 01       	movw	r16, r28
+     f40:	09 5f       	subi	r16, 0xF9	; 249
+     f42:	1f 4f       	sbci	r17, 0xFF	; 255
+	for(int k=0; k<7; k++, ++text){
+		cmd_LCD(pgm_read_byte(&(*text)), 1);	//grava 8 bytes na DDRAM começando no end. 0x40
+     f44:	fe 01       	movw	r30, r28
+     f46:	84 91       	lpm	r24, Z
+     f48:	61 e0       	ldi	r22, 0x01	; 1
+     f4a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	}
+}
+
+void mandaCaracterNovo(const unsigned char *text){
+	cmd_LCD(0x40 + (count * 8), 0);				//endereço base para gravar novo segmento 0x40
+	for(int k=0; k<7; k++, ++text){
+     f4e:	21 96       	adiw	r28, 0x01	; 1
+     f50:	0c 17       	cp	r16, r28
+     f52:	1d 07       	cpc	r17, r29
+     f54:	b9 f7       	brne	.-18     	; 0xf44 <mandaCaracterNovo+0x26>
+		cmd_LCD(pgm_read_byte(&(*text)), 1);	//grava 8 bytes na DDRAM começando no end. 0x40
+	}
+	cmd_LCD(0x00,1);
+     f56:	61 e0       	ldi	r22, 0x01	; 1
+     f58:	80 e0       	ldi	r24, 0x00	; 0
+     f5a:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	cmd_LCD(0x80,0);				//endereça a posição para escrita dos caracteres
+     f5e:	60 e0       	ldi	r22, 0x00	; 0
+     f60:	80 e8       	ldi	r24, 0x80	; 128
+     f62:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	count = count + 1;
+     f66:	80 91 0a 01 	lds	r24, 0x010A	; 0x80010a <__data_end>
+     f6a:	90 91 0b 01 	lds	r25, 0x010B	; 0x80010b <__data_end+0x1>
+     f6e:	01 96       	adiw	r24, 0x01	; 1
+     f70:	90 93 0b 01 	sts	0x010B, r25	; 0x80010b <__data_end+0x1>
+     f74:	80 93 0a 01 	sts	0x010A, r24	; 0x80010a <__data_end>
+}
+     f78:	df 91       	pop	r29
+     f7a:	cf 91       	pop	r28
+     f7c:	1f 91       	pop	r17
+     f7e:	0f 91       	pop	r16
+     f80:	08 95       	ret
+
+00000f82 <inicializa>:
+	}
+	return 0;
+}
+
+void inicializa(){
+	DDRB = 255;
+     f82:	8f ef       	ldi	r24, 0xFF	; 255
+     f84:	84 b9       	out	0x04, r24	; 4
+	DDRC = 0;
+     f86:	17 b8       	out	0x07, r1	; 7
+	DDRD = 255;
+     f88:	8a b9       	out	0x0a, r24	; 10
+	PORTB = 0;
+     f8a:	15 b8       	out	0x05, r1	; 5
+	PORTC = 255;
+     f8c:	88 b9       	out	0x08, r24	; 8
+	PORTD = 0;
+     f8e:	1b b8       	out	0x0b, r1	; 11
+	inic_LCD_4bits();
+     f90:	0e 94 6d 01 	call	0x2da	; 0x2da <inic_LCD_4bits>
+	cmd_LCD(0x01,0);
+     f94:	60 e0       	ldi	r22, 0x00	; 0
+     f96:	81 e0       	ldi	r24, 0x01	; 1
+     f98:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+	mandaCaracterNovo(carac1);
+     f9c:	80 e8       	ldi	r24, 0x80	; 128
+     f9e:	90 e0       	ldi	r25, 0x00	; 0
+     fa0:	0e 94 8f 07 	call	0xf1e	; 0xf1e <mandaCaracterNovo>
+     fa4:	08 95       	ret
+
+00000fa6 <Desligar>:
+	cmd_LCD(0x80,0);				//endereça a posição para escrita dos caracteres
+	count = count + 1;
+}
+/* By Stecken */
+
+void Desligar(){
+     fa6:	cf 93       	push	r28
+     fa8:	df 93       	push	r29
+	cafeColocar = 1;
+     faa:	81 e0       	ldi	r24, 0x01	; 1
+     fac:	90 e0       	ldi	r25, 0x00	; 0
+     fae:	90 93 09 01 	sts	0x0109, r25	; 0x800109 <cafeColocar+0x1>
+     fb2:	80 93 08 01 	sts	0x0108, r24	; 0x800108 <cafeColocar>
+	quantCopo = 1;
+     fb6:	90 93 05 01 	sts	0x0105, r25	; 0x800105 <quantCopo+0x1>
+     fba:	80 93 04 01 	sts	0x0104, r24	; 0x800104 <quantCopo>
+	for (int i = 0; i < 2; i++){
+		typeCopo[i] = 1;
+     fbe:	20 e0       	ldi	r18, 0x00	; 0
+     fc0:	31 e0       	ldi	r19, 0x01	; 1
+     fc2:	f9 01       	movw	r30, r18
+     fc4:	91 83       	std	Z+1, r25	; 0x01
+     fc6:	80 83       	st	Z, r24
+		leiteBool[i] = 0;
+     fc8:	c6 e1       	ldi	r28, 0x16	; 22
+     fca:	d1 e0       	ldi	r29, 0x01	; 1
+     fcc:	19 82       	std	Y+1, r1	; 0x01
+     fce:	18 82       	st	Y, r1
+		acucarBool[i] = 0;
+     fd0:	a2 e1       	ldi	r26, 0x12	; 18
+     fd2:	b1 e0       	ldi	r27, 0x01	; 1
+     fd4:	11 96       	adiw	r26, 0x01	; 1
+     fd6:	1c 92       	st	X, r1
+     fd8:	1e 92       	st	-X, r1
+		chocolateBool[i] = 0;
+     fda:	4e e0       	ldi	r20, 0x0E	; 14
+     fdc:	51 e0       	ldi	r21, 0x01	; 1
+     fde:	fa 01       	movw	r30, r20
+     fe0:	11 82       	std	Z+1, r1	; 0x01
+     fe2:	10 82       	st	Z, r1
+
+void Desligar(){
+	cafeColocar = 1;
+	quantCopo = 1;
+	for (int i = 0; i < 2; i++){
+		typeCopo[i] = 1;
+     fe4:	f9 01       	movw	r30, r18
+     fe6:	93 83       	std	Z+3, r25	; 0x03
+     fe8:	82 83       	std	Z+2, r24	; 0x02
+		leiteBool[i] = 0;
+     fea:	1b 82       	std	Y+3, r1	; 0x03
+     fec:	1a 82       	std	Y+2, r1	; 0x02
+		acucarBool[i] = 0;
+     fee:	13 96       	adiw	r26, 0x03	; 3
+     ff0:	1c 92       	st	X, r1
+     ff2:	1e 92       	st	-X, r1
+     ff4:	12 97       	sbiw	r26, 0x02	; 2
+		chocolateBool[i] = 0;
+     ff6:	fa 01       	movw	r30, r20
+     ff8:	13 82       	std	Z+3, r1	; 0x03
+     ffa:	12 82       	std	Z+2, r1	; 0x02
+	}
+	count = 0;
+     ffc:	10 92 0b 01 	sts	0x010B, r1	; 0x80010b <__data_end+0x1>
+    1000:	10 92 0a 01 	sts	0x010A, r1	; 0x80010a <__data_end>
+    1004:	df 91       	pop	r29
+    1006:	cf 91       	pop	r28
+    1008:	08 95       	ret
+
+0000100a <main>:
+		--ms;
+	}
+}
+
+int main(void) {
+	inicializa();
+    100a:	0e 94 c1 07 	call	0xf82	; 0xf82 <inicializa>
+	cmd_LCD(0x01,0); // limpa lcd
+    100e:	60 e0       	ldi	r22, 0x00	; 0
+    1010:	81 e0       	ldi	r24, 0x01	; 1
+    1012:	0e 94 36 01 	call	0x26c	; 0x26c <cmd_LCD>
+				estado = 10;
+				break;
+			}
+			case 10: {
+				finalizar();
+				estado = 11;
+    1016:	0f 2e       	mov	r0, r31
+    1018:	fb e0       	ldi	r31, 0x0B	; 11
+    101a:	8f 2e       	mov	r8, r31
+    101c:	91 2c       	mov	r9, r1
+    101e:	f0 2d       	mov	r31, r0
+				estado = 9;
+				break;
+			}
+			case 9: {
+				presence(msgPresenceRet);
+				estado = 10;
+    1020:	0f 2e       	mov	r0, r31
+    1022:	fa e0       	ldi	r31, 0x0A	; 10
+    1024:	af 2e       	mov	r10, r31
+    1026:	b1 2c       	mov	r11, r1
+    1028:	f0 2d       	mov	r31, r0
+				estado = 8;
+				break;
+			}
+			case 8: {
+				copoPronto();
+				estado = 9;
+    102a:	0f 2e       	mov	r0, r31
+    102c:	f9 e0       	ldi	r31, 0x09	; 9
+    102e:	cf 2e       	mov	r12, r31
+    1030:	d1 2c       	mov	r13, r1
+    1032:	f0 2d       	mov	r31, r0
+				estado = 7;
+				break;
+			}
+			case 7: {
+				chocolateConfig();
+				estado = 8;
+    1034:	68 94       	set
+    1036:	ee 24       	eor	r14, r14
+    1038:	e3 f8       	bld	r14, 3
+    103a:	f1 2c       	mov	r15, r1
+				estado = 6;
+				break;
+			}
+			case 6: {
+				acucarConfig();
+				estado = 7;
+    103c:	07 e0       	ldi	r16, 0x07	; 7
+    103e:	10 e0       	ldi	r17, 0x00	; 0
+				estado = 5;
+				break;
+			}
+			case 5: {
+				leiteConfig();
+				estado = 6;
+    1040:	c6 e0       	ldi	r28, 0x06	; 6
+    1042:	d0 e0       	ldi	r29, 0x00	; 0
+				estado = 4;
+				break;
+			}
+			case 4: {
+				consumirCafeMaquina();
+				estado = 5;
+    1044:	0f 2e       	mov	r0, r31
+    1046:	f5 e0       	ldi	r31, 0x05	; 5
+    1048:	6f 2e       	mov	r6, r31
+    104a:	71 2c       	mov	r7, r1
+    104c:	f0 2d       	mov	r31, r0
+				estado = 3;
+				break;
+			}
+			case 3: {
+				presence(msgPresenceEnt);
+				estado = 4;
+    104e:	68 94       	set
+    1050:	44 24       	eor	r4, r4
+    1052:	42 f8       	bld	r4, 2
+    1054:	51 2c       	mov	r5, r1
+				estado = 2;
+				break;
+			}
+			case 2: {
+				configTypeCopo();
+				estado = 3;
+    1056:	0f 2e       	mov	r0, r31
+    1058:	f3 e0       	ldi	r31, 0x03	; 3
+    105a:	2f 2e       	mov	r2, r31
+    105c:	31 2c       	mov	r3, r1
+    105e:	f0 2d       	mov	r31, r0
+
+int main(void) {
+	inicializa();
+	cmd_LCD(0x01,0); // limpa lcd
+	while (1) {
+		switch (estado){
+    1060:	90 91 0c 01 	lds	r25, 0x010C	; 0x80010c <estado>
+    1064:	80 91 0d 01 	lds	r24, 0x010D	; 0x80010d <estado+0x1>
+    1068:	e9 2f       	mov	r30, r25
+    106a:	f8 2f       	mov	r31, r24
+    106c:	ec 30       	cpi	r30, 0x0C	; 12
+    106e:	f1 05       	cpc	r31, r1
+    1070:	d8 f7       	brcc	.-10     	; 0x1068 <main+0x5e>
+    1072:	ec 5c       	subi	r30, 0xCC	; 204
+    1074:	ff 4f       	sbci	r31, 0xFF	; 255
+    1076:	0c 94 ad 08 	jmp	0x115a	; 0x115a <__tablejump2__>
+			case 0: {
+				inicio();
+    107a:	0e 94 b4 02 	call	0x568	; 0x568 <inicio>
+				estado = 1;
+    107e:	81 e0       	ldi	r24, 0x01	; 1
+    1080:	90 e0       	ldi	r25, 0x00	; 0
+    1082:	90 93 0d 01 	sts	0x010D, r25	; 0x80010d <estado+0x1>
+    1086:	80 93 0c 01 	sts	0x010C, r24	; 0x80010c <estado>
+				break;
+    108a:	ea cf       	rjmp	.-44     	; 0x1060 <main+0x56>
+			}
+			case 1: {
+				configQuantCopo();
+    108c:	0e 94 45 03 	call	0x68a	; 0x68a <configQuantCopo>
+				estado = 2;
+    1090:	82 e0       	ldi	r24, 0x02	; 2
+    1092:	90 e0       	ldi	r25, 0x00	; 0
+    1094:	90 93 0d 01 	sts	0x010D, r25	; 0x80010d <estado+0x1>
+    1098:	80 93 0c 01 	sts	0x010C, r24	; 0x80010c <estado>
+				break;
+    109c:	e1 cf       	rjmp	.-62     	; 0x1060 <main+0x56>
+			}
+			case 2: {
+				configTypeCopo();
+    109e:	0e 94 69 03 	call	0x6d2	; 0x6d2 <configTypeCopo>
+				estado = 3;
+    10a2:	30 92 0d 01 	sts	0x010D, r3	; 0x80010d <estado+0x1>
+    10a6:	20 92 0c 01 	sts	0x010C, r2	; 0x80010c <estado>
+				break;
+    10aa:	da cf       	rjmp	.-76     	; 0x1060 <main+0x56>
+			}
+			case 3: {
+				presence(msgPresenceEnt);
+    10ac:	8f ed       	ldi	r24, 0xDF	; 223
+    10ae:	91 e0       	ldi	r25, 0x01	; 1
+    10b0:	0e 94 3e 05 	call	0xa7c	; 0xa7c <presence>
+				estado = 4;
+    10b4:	50 92 0d 01 	sts	0x010D, r5	; 0x80010d <estado+0x1>
+    10b8:	40 92 0c 01 	sts	0x010C, r4	; 0x80010c <estado>
+				break;
+    10bc:	d1 cf       	rjmp	.-94     	; 0x1060 <main+0x56>
+			}
+			case 4: {
+				consumirCafeMaquina();
+    10be:	0e 94 d4 05 	call	0xba8	; 0xba8 <consumirCafeMaquina>
+				estado = 5;
+    10c2:	70 92 0d 01 	sts	0x010D, r7	; 0x80010d <estado+0x1>
+    10c6:	60 92 0c 01 	sts	0x010C, r6	; 0x80010c <estado>
+				break;
+    10ca:	ca cf       	rjmp	.-108    	; 0x1060 <main+0x56>
+			}
+			case 5: {
+				leiteConfig();
+    10cc:	0e 94 57 06 	call	0xcae	; 0xcae <leiteConfig>
+				estado = 6;
+    10d0:	d0 93 0d 01 	sts	0x010D, r29	; 0x80010d <estado+0x1>
+    10d4:	c0 93 0c 01 	sts	0x010C, r28	; 0x80010c <estado>
+				break;
+    10d8:	c3 cf       	rjmp	.-122    	; 0x1060 <main+0x56>
+			}
+			case 6: {
+				acucarConfig();
+    10da:	0e 94 bf 06 	call	0xd7e	; 0xd7e <acucarConfig>
+				estado = 7;
+    10de:	10 93 0d 01 	sts	0x010D, r17	; 0x80010d <estado+0x1>
+    10e2:	00 93 0c 01 	sts	0x010C, r16	; 0x80010c <estado>
+				break;
+    10e6:	bc cf       	rjmp	.-136    	; 0x1060 <main+0x56>
+			}
+			case 7: {
+				chocolateConfig();
+    10e8:	0e 94 27 07 	call	0xe4e	; 0xe4e <chocolateConfig>
+				estado = 8;
+    10ec:	f0 92 0d 01 	sts	0x010D, r15	; 0x80010d <estado+0x1>
+    10f0:	e0 92 0c 01 	sts	0x010C, r14	; 0x80010c <estado>
+				break;
+    10f4:	b5 cf       	rjmp	.-150    	; 0x1060 <main+0x56>
+			}
+			case 8: {
+				copoPronto();
+    10f6:	0e 94 9f 04 	call	0x93e	; 0x93e <copoPronto>
+				estado = 9;
+    10fa:	d0 92 0d 01 	sts	0x010D, r13	; 0x80010d <estado+0x1>
+    10fe:	c0 92 0c 01 	sts	0x010C, r12	; 0x80010c <estado>
+				break;
+    1102:	ae cf       	rjmp	.-164    	; 0x1060 <main+0x56>
+			}
+			case 9: {
+				presence(msgPresenceRet);
+    1104:	86 ed       	ldi	r24, 0xD6	; 214
+    1106:	91 e0       	ldi	r25, 0x01	; 1
+    1108:	0e 94 3e 05 	call	0xa7c	; 0xa7c <presence>
+				estado = 10;
+    110c:	b0 92 0d 01 	sts	0x010D, r11	; 0x80010d <estado+0x1>
+    1110:	a0 92 0c 01 	sts	0x010C, r10	; 0x80010c <estado>
+				break;
+    1114:	a5 cf       	rjmp	.-182    	; 0x1060 <main+0x56>
+			}
+			case 10: {
+				finalizar();
+    1116:	0e 94 bd 04 	call	0x97a	; 0x97a <finalizar>
+				estado = 11;
+    111a:	90 92 0d 01 	sts	0x010D, r9	; 0x80010d <estado+0x1>
+    111e:	80 92 0c 01 	sts	0x010C, r8	; 0x80010c <estado>
+				break;
+    1122:	9e cf       	rjmp	.-196    	; 0x1060 <main+0x56>
+			}
+			case 11: {
+				Desligar();
+    1124:	0e 94 d3 07 	call	0xfa6	; 0xfa6 <Desligar>
+				estado = 0;
+    1128:	10 92 0d 01 	sts	0x010D, r1	; 0x80010d <estado+0x1>
+    112c:	10 92 0c 01 	sts	0x010C, r1	; 0x80010c <estado>
+				break;
+    1130:	97 cf       	rjmp	.-210    	; 0x1060 <main+0x56>
+
+00001132 <__divmodhi4>:
+    1132:	97 fb       	bst	r25, 7
+    1134:	07 2e       	mov	r0, r23
+    1136:	16 f4       	brtc	.+4      	; 0x113c <__divmodhi4+0xa>
+    1138:	00 94       	com	r0
+    113a:	07 d0       	rcall	.+14     	; 0x114a <__divmodhi4_neg1>
+    113c:	77 fd       	sbrc	r23, 7
+    113e:	09 d0       	rcall	.+18     	; 0x1152 <__divmodhi4_neg2>
+    1140:	0e 94 b3 08 	call	0x1166	; 0x1166 <__udivmodhi4>
+    1144:	07 fc       	sbrc	r0, 7
+    1146:	05 d0       	rcall	.+10     	; 0x1152 <__divmodhi4_neg2>
+    1148:	3e f4       	brtc	.+14     	; 0x1158 <__divmodhi4_exit>
+
+0000114a <__divmodhi4_neg1>:
+    114a:	90 95       	com	r25
+    114c:	81 95       	neg	r24
+    114e:	9f 4f       	sbci	r25, 0xFF	; 255
+    1150:	08 95       	ret
+
+00001152 <__divmodhi4_neg2>:
+    1152:	70 95       	com	r23
+    1154:	61 95       	neg	r22
+    1156:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00001158 <__divmodhi4_exit>:
+    1158:	08 95       	ret
+
+0000115a <__tablejump2__>:
+    115a:	ee 0f       	add	r30, r30
+    115c:	ff 1f       	adc	r31, r31
+    115e:	05 90       	lpm	r0, Z+
+    1160:	f4 91       	lpm	r31, Z
+    1162:	e0 2d       	mov	r30, r0
+    1164:	09 94       	ijmp
+
+00001166 <__udivmodhi4>:
+    1166:	aa 1b       	sub	r26, r26
+    1168:	bb 1b       	sub	r27, r27
+    116a:	51 e1       	ldi	r21, 0x11	; 17
+    116c:	07 c0       	rjmp	.+14     	; 0x117c <__udivmodhi4_ep>
+
+0000116e <__udivmodhi4_loop>:
+    116e:	aa 1f       	adc	r26, r26
+    1170:	bb 1f       	adc	r27, r27
+    1172:	a6 17       	cp	r26, r22
+    1174:	b7 07       	cpc	r27, r23
+    1176:	10 f0       	brcs	.+4      	; 0x117c <__udivmodhi4_ep>
+    1178:	a6 1b       	sub	r26, r22
+    117a:	b7 0b       	sbc	r27, r23
+
+0000117c <__udivmodhi4_ep>:
+    117c:	88 1f       	adc	r24, r24
+    117e:	99 1f       	adc	r25, r25
+    1180:	5a 95       	dec	r21
+    1182:	a9 f7       	brne	.-22     	; 0x116e <__udivmodhi4_loop>
+    1184:	80 95       	com	r24
+    1186:	90 95       	com	r25
+    1188:	bc 01       	movw	r22, r24
+    118a:	cd 01       	movw	r24, r26
+    118c:	08 95       	ret
+
+0000118e <_exit>:
+    118e:	f8 94       	cli
+
+00001190 <__stop_program>:
+    1190:	ff cf       	rjmp	.-2      	; 0x1190 <__stop_program>
